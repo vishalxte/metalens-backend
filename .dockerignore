@@ -1,0 +1,48 @@
+# Everything the image must NOT receive.
+#
+# Two reasons this file matters more than usual here:
+#   1. venv/ is a Windows virtualenv — hundreds of MB of .exe/.pyd that
+#      are useless and unloadable on Linux. Without this line every
+#      `docker build` uploads it as build context.
+#   2. .env holds the OpenAI key, the SMTP password and the DB password.
+#      It is deliberately NOT copied into the image; docker compose
+#      injects the values at run time from .env.docker instead, so the
+#      secrets never end up in an image layer.
+
+# --- virtualenvs (Windows-built, unusable in Linux) ---
+venv/
+.venv/
+env/
+
+# --- python bytecode / caches ---
+**/__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- previous Nuitka output (regenerated every build) ---
+build/
+dist/
+*.so
+*.pyi
+
+# --- runtime data, mounted as volumes instead ---
+logs/
+uploads/
+backups/
+
+# --- secrets: injected via docker compose env_file, never baked in ---
+.env
+.env.*
+
+# --- not needed to build or run the API ---
+.git/
+.gitignore
+.idea/
+.vscode/
+tests/
+scripts/
+*.md
+README

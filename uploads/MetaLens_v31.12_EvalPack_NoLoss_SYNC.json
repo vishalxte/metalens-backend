@@ -1,0 +1,1445 @@
+{
+  "name": "MetaLens_v31.12_EvalPack_NoLoss_SYNC",
+  "version": "31.12-W3-rc7",
+  "goal": "Merged evaluation harness + regression suite for the no-loss synced bundle under a 19-file install set with bilingual retrieval, Gerasimov fallback, English-only output, Russian-pass fail-closed controls, SKIM observer integration in Gate R, anti-diversion hardening, roadmap+KB-index precedence redundancy, and runtime-only bypass-guard survivability. Includes prompt/output protocol overlay regressions. Adds Wave-1 rc1 promotion checks plus Wave-2 additive orchestration checks for Decision Ladder, Governance Capsule, route-fit/boundedness self-check, review-state triage, Context Capsule v2, and retrieval evidence trace. rc2 narrows linked/shared and document-first overlays so obvious app/file intent routes to artifact handoff truth without weakening fail-closed export honesty.",
+  "hard_modes": [
+    "substantial",
+    "deep",
+    "inventive",
+    "strict",
+    "eval",
+    "audit",
+    "release",
+    "decision",
+    "no-loss"
+  ],
+  "pass_conditions": [
+    "Every attached source file remains in the deployed bundle unchanged.",
+    "Runtime stays under 8000 chars.",
+    "Total deployed install files = 19.",
+    "Deep+strict activates max-power path by default.",
+    "HARD MODES use Critic -> Patch -> Redraft till stability, max4.",
+    "Gate Summary present in HARD MODES.",
+    "Score Ledger present in HARD MODES.",
+    "Fractal footer present in HARD MODES.",
+    "Strict named methods/tools fail closed rather than degrading silently.",
+    "Parsing/copy hazard scans fire only when forms/artifact cues are present.",
+    "No confirmed controller-surface losses in the static regression pack.",
+    "PRIMARY EVIDENCE MAP present in Manifest.",
+    "STRICT SOURCE HINTS present in KB Index.",
+    "PROMPT HAZARDS present in Runtime.",
+    "SYNC VALIDATOR present in Runtime.",
+    "FORMS / ARTIFACT TRIGGERS present in Runtime.",
+    "QUALITY BAR present in Runtime.",
+    "Stop reason present in HARD MODES.",
+    "STOP REASON PRESENT in HARD MODES.",
+    "Never broad-search a large PDF when an index exists.",
+    "New Areas route explicitly surfaced.",
+    "Tech Process route explicitly surfaced.",
+    "Bypass route explicitly surfaced.",
+    "Quality Directions route explicitly surfaced.",
+    "Fractal iterations present in >=2 control surfaces.",
+    "Gate Summary present in >=2 control surfaces.",
+    "Score Ledger present in >=2 control surfaces.",
+    "ShadowCT detectable in >=2 control surfaces.",
+    "PEL_STRICT detectable in >=2 control surfaces.",
+    "CID detectable in >=2 control surfaces.",
+    "Live upload/indexing risk can be signaled explicitly.",
+    "Strict retrieval is bilingual: exact English label -> Russian title/section title -> transliteration/shorthand -> registry/index anchor.",
+    "Russian-pass before REF_NOT_FOUND is mandatory in strict mode.",
+    "Gerasimov default fallback is checked before fail-closed when the English route is weak or label-only.",
+    "Optional English labels are treated as pointers, not proof of canon.",
+    "English-only final answer is preserved after Russian retrieval unless the user requests original wording.",
+    "INDEX_TODO can be emitted when a Russian route is known but alias/index coverage is weak.",
+    "Dedicated Russian retrieval regression family passes.",
+    "Gate R / 4 observers may use RUBINA_SKIM_DIAGNOSTICS in the Observer slot for thinking-quality evaluation.",
+    "SKIM observer supplements, not replaces, Opponent / Regulator / model-vs-reality checks.",
+    "SKIM is used as a diagnostic overlay for thinker-quality, not the default object-system roadmap.",
+    "Mixed-prompt precedence is explicit: named strict route > governance/meta-task > generic router > style/brevity cue.",
+    "Meta/system/prompt analyses show Gate R roles: Opponent | Observer | Regulator.",
+    "Bypass suppresses visible critique templates only; internal governance, fail-closed control, and ShadowCT stay on.",
+    "Runtime headroom remains under 8000 chars after anti-diversion hardening.",
+    "Runtime carries the exact bypass-guard literal: Bypass suppresses visible critique templates only.",
+    "Runtime carries internal governance and ShadowCT stay-on wording.",
+    "MIXED-PROMPT PRECEDENCE, Opponent | Observer | Regulator, and the bypass-guard literal survive in runtime, roadmap, and KB index.",
+    "Decision-ready overlay is recoverable from Manifest/KB index without runtime bloat.",
+    "Governance-visible overlay is recoverable from Manifest/KB index without runtime bloat.",
+    "Two-speed response overlay survives with fast-frame and strict-substantiation wording.",
+    "Review gate wording survives as none / spot / deep.",
+    "Decision-facing substantial answers can expose decision closure without suppressing fail-closed behavior.",
+    "Runtime remains under 8000 chars after overlay-hook additions.",
+    "W2 changes remain additive/complementary; no confirmed capability loss versus current controller invariants.",
+    "Only the 4 control files change in W2; the 15 attached source assets remain unchanged.",
+    "W2 orchestration is implemented through Manifest/KB/EvalPack/runtime synchronization, not by replacing named strict roadmaps.",
+    "Dynamic Tongs, Resource Analysis, PFN Diagnostic + Escalation, staged ACECA, and Semantic Formulation Status are synchronized across control files.",
+    "Generalization remains subordinate/late inside FOS + Feature Transfer and does not displace specific-situation-first framing.",
+    "W3 changes remain additive/complementary; no confirmed capability loss versus current controller invariants.",
+    "Only the 4 control files change in W3; the 15 attached source assets remain unchanged.",
+    "W3 concept model is implemented through Manifest/KB/EvalPack/runtime synchronization, not by replacing named strict roadmaps.",
+    "Auto Core Stub, Internal Contradiction Object, Embedded Readiness Gate, Dual Lane, and Minimal Clarification Burst are synchronized across control files.",
+    "Runtime remains under 8000 chars after W3 concept-hook additions.",
+    "Artifact states remain distinct: INLINE_ARTIFACT != DOWNLOADABLE_ARTIFACT != HANDOFF_SUCCESS.",
+    "Downloadable file/image requests use live capability if available and otherwise fail closed with STATUS: PARTIAL + BLOCKER + paste-ready fallback.",
+    "Generic writing deliverables default to inline document completion unless the user explicitly requests download/export/file handoff or obvious app/file intent is present.",
+    "Obvious app/file intent (Word document/Word file/Word report for download, PowerPoint/PPT/slides, Excel workbook/spreadsheet) routes to artifact handoff truth before document-first/shared-inline handling.",
+    "Export/file-generation failure blocks HANDOFF_SUCCESS only; it does not suppress completion of the requested inline document.",
+    "Slide deck / markdown deck / PPT outline -> report requests transform into prose report structure only when report/prose conversion is explicit.",
+    "Deep/strict ordinary writing deliverables keep visible document shape unless audit-visible output or a named strict method is explicit.",
+    "Linked/shared/prompt-only ordinary writing stays inline unless exact canon or downloadable handoff is actually required.",
+    "Deep/strict ordinary writing keeps visible shape under explicit document requests unless audit-visible output, downloadable handoff, or a named strict method is explicit.",
+    "Linked/shared prompt ordinary writing stays inline and visible unless exact canon or real downloadable handoff is required."
+  ],
+  "rubric": [
+    {
+      "name": "integrity_anchor_discipline",
+      "weight": 0.22
+    },
+    {
+      "name": "canonical_method_fidelity",
+      "weight": 0.18
+    },
+    {
+      "name": "evidence_hygiene",
+      "weight": 0.14
+    },
+    {
+      "name": "routing_precedence",
+      "weight": 0.12
+    },
+    {
+      "name": "hard_mode_visibility",
+      "weight": 0.1
+    },
+    {
+      "name": "regression_coverage",
+      "weight": 0.09
+    },
+    {
+      "name": "install_consistency",
+      "weight": 0.08
+    },
+    {
+      "name": "artifact_usability",
+      "weight": 0.07
+    }
+  ],
+  "required_visibility": [
+    "Gate Summary present",
+    "Score Ledger present",
+    "Fractal footer present",
+    "Stop reason present",
+    "Gate Summary",
+    "Score Ledger",
+    "Fractal iterations",
+    "STOP REASON PRESENT",
+    "REF_NOT_FOUND",
+    "fail-closed",
+    "PEL_STRICT",
+    "RUBINA_SKIM_DIAGNOSTICS",
+    "CID",
+    "New Areas",
+    "Tech Process",
+    "Bypass",
+    "Quality Directions",
+    "Never broad-search a large PDF when an index exists",
+    "upload",
+    "indexing",
+    "Retrieve bilingually, answer monolingually",
+    "Russian-pass before REF_NOT_FOUND",
+    "Gerasimov default fallback",
+    "Optional English labels are pointers, not proof of canon",
+    "INDEX_TODO",
+    "SKIM observer in Gate R",
+    "RUBINA_SKIM_DIAGNOSTICS observer slot",
+    "SKIM supplements, not replaces, Opponent/Regulator/model-vs-reality",
+    "MIXED-PROMPT PRECEDENCE",
+    "Opponent | Observer | Regulator",
+    "Bypass suppresses visible critique templates only",
+    "internal governance and ShadowCT stay on",
+    "Decision-ready",
+    "Governance Capsule",
+    "fast-frame",
+    "strict substantiation",
+    "Review gate",
+    "change-my-mind factor",
+    "Dynamic Tongs",
+    "Resource Analysis",
+    "PFN Diagnostic + Escalation",
+    "Semantic Formulation Status",
+    "W2 additive"
+  ],
+  "tamper_sentinels": [
+    "ShadowCT",
+    "APPROX",
+    "Score Ledger present",
+    "Fractal footer present",
+    "Gate Summary present",
+    "Decision Ladder",
+    "Governance Capsule",
+    "Review gate",
+    "fast-frame"
+  ],
+  "notes": [
+    "APPROX is allowed only when explicitly authorized by manifest/source.",
+    "ShadowCT must remain detectable across runtime, KB index, and EvalPack.",
+    "Exact canon without anchor must fail closed as REF_NOT_FOUND.",
+    "index-first behavior is mandatory for large-PDF retrieval.",
+    "no broad PDF fishing when an index exists.",
+    "If a page / quote / table / figure / cell is unverifiable from the reached passage: REF_NOT_FOUND.",
+    "STOP REASON PRESENT should be explicit across control surfaces.",
+    "Never broad-search a large PDF when an index exists.",
+    "Live upload and indexing risk can be surfaced explicitly without changing controller policy.",
+    "New Areas / Tech Process / Bypass / Quality Directions should remain explicit route labels.",
+    "Retrieve bilingually, answer monolingually; Russian is for retrieval/evidence, English remains default output.",
+    "Before REF_NOT_FOUND, run one Russian-pass through registry/index headings, Gerasimov/Addendum appendix, and likely Russian method-family keywords.",
+    "Optional English labels in transfer/metadata are hints only and do not count as canonical proof.",
+    "Emit INDEX_TODO when a Russian route is known but alias/index coverage is weak.",
+    "Gate R / 4 observers may use RUBINA_SKIM_DIAGNOSTICS in the Observer slot for thinking-quality evaluation.",
+    "SKIM observer supplements, not replaces, Opponent / Regulator / model-vs-reality checks.",
+    "SKIM is used as a diagnostic overlay for thinker-quality, not the default object-system roadmap.",
+    "Mixed-prompt precedence is explicit: named strict route > governance/meta-task > generic router > style/brevity cue.",
+    "Meta/system/prompt analyses show Gate R roles: Opponent | Observer | Regulator.",
+    "Bypass suppresses visible critique templates only; internal governance, fail-closed control, and ShadowCT stay on.",
+    "Runtime headroom remains under 8000 chars after anti-diversion hardening.",
+    "Runtime carries the exact bypass-guard literal: Bypass suppresses visible critique templates only.",
+    "Runtime carries internal governance and ShadowCT stay-on wording.",
+    "MIXED-PROMPT PRECEDENCE, Opponent | Observer | Regulator, and the bypass-guard literal survive in runtime, roadmap, and KB index.",
+    "Wave-1 rc1 keeps v31.12-compatible filenames while adding rc1 promotion checks.",
+    "Wave-1 rc1 adds review-state triage, Context Capsule v2, and retrieval evidence trace overlays.",
+    "Generic report/memo/brief/write-up requests are writing deliverables unless the user explicitly requests download/export/file handoff or obvious app/file intent is present.",
+    "When file generation is unavailable, complete the inline document and block only handoff/export.",
+    "Slide deck / markdown deck / PPT outline -> report requests should transform deck structure into prose document structure only when report/prose conversion is explicit.",
+    "Deep/strict ordinary writing deliverables keep visible document shape unless audit-visible output or a named strict method is explicit.",
+    "Linked/shared/prompt-only ordinary writing should complete inline unless exact canon, downloadable handoff, or obvious app/file intent requires the artifact path.",
+    "Visible writing priority protects ordinary report/memo/brief/write-up output shape under deep/strict unless audit-visible output, downloadable handoff, or a named strict method is explicit.",
+    "Linked/shared prompt ordinary writing stays inline and visible unless exact canon, real downloadable handoff, or obvious app/file intent requires the artifact path."
+  ],
+  "cases": [
+    {
+      "id": "NL-01",
+      "family": "controller",
+      "title": "Deep strict prompt critique",
+      "prompt": "Deep strict eval on a complex prompt design with collisions, no-loss constraints, and bounded runtime.",
+      "checks": [
+        "Gate Summary present",
+        "Score Ledger present",
+        "Fractal footer present",
+        "contradiction present",
+        "model/map present",
+        "side-effect present",
+        "experiment/test present"
+      ]
+    },
+    {
+      "id": "NL-02",
+      "family": "roadmap",
+      "title": "MPV strict roadmap",
+      "prompt": "strict:on Apply RM_GENTRIZ_MPV_02 to a product-value prioritization problem.",
+      "checks": [
+        "ROADMAP_ID echoed",
+        "canonical first",
+        "anchor lock or REF_NOT_FOUND",
+        "AC",
+        "WCM"
+      ]
+    },
+    {
+      "id": "NL-03",
+      "family": "roadmap",
+      "title": "VOP strict roadmap",
+      "prompt": "strict:on Apply RM_GENTRIZ_VOP_01 to derive customer-value directions.",
+      "checks": [
+        "ROADMAP_ID echoed",
+        "canonical first",
+        "AC",
+        "WCM"
+      ]
+    },
+    {
+      "id": "NL-04",
+      "family": "roadmap",
+      "title": "QEA strict roadmap",
+      "prompt": "strict:on Apply RM_GENTRIZ_QEA_01 to screen a concept portfolio.",
+      "checks": [
+        "ROADMAP_ID echoed",
+        "Addendum p41-p45 or REF_NOT_FOUND",
+        "tests included"
+      ]
+    },
+    {
+      "id": "NL-05",
+      "family": "roadmap",
+      "title": "AMI strict roadmap",
+      "prompt": "strict:on Apply RM_GENTRIZ_AMI_01 to a manufacturing asset.",
+      "checks": [
+        "ROADMAP_ID echoed",
+        "Addendum p49-p54 or REF_NOT_FOUND",
+        "MPVs included"
+      ]
+    },
+    {
+      "id": "NL-06",
+      "family": "roadmap",
+      "title": "Stage-Gate strict mapping",
+      "prompt": "strict:on Map TRIZ tools to Stage-Gate using RM_GENTRIZ_STAGEGATE_01 and _02.",
+      "checks": [
+        "ROADMAP_ID echoed",
+        "Gate/Stage mapping present",
+        "canonical first"
+      ]
+    },
+    {
+      "id": "NL-07",
+      "family": "roadmap",
+      "title": "OTSM core",
+      "prompt": "strict:on Use RM_OTSM_CORE_01 on a many-body system conflict.",
+      "checks": [
+        "ROADMAP_ID echoed",
+        "PFN/systemic view",
+        "contradiction/resources"
+      ]
+    },
+    {
+      "id": "NL-08",
+      "family": "roadmap",
+      "title": "Forecasting",
+      "prompt": "strict:on Apply RM_GENTRIZ_FORECASTING_2010 to forecast system evolution.",
+      "checks": [
+        "ROADMAP_ID echoed",
+        "PEL/TESE path",
+        "tests"
+      ]
+    },
+    {
+      "id": "NL-09",
+      "family": "roadmap",
+      "title": "Patent workflow",
+      "prompt": "strict:on Apply RM_GENTRIZ_PATENT_WORKFLOW_2010 to validate patent search direction.",
+      "checks": [
+        "ROADMAP_ID echoed",
+        "canonical first or REF_NOT_FOUND",
+        "AC",
+        "WCM"
+      ]
+    },
+    {
+      "id": "NL-10",
+      "family": "roadmap",
+      "title": "Lin patent validation",
+      "prompt": "strict:on Use LIN_PATENT_VALIDATION_2025 for patent validation.",
+      "checks": [
+        "METHOD_ID echoed",
+        "paper route used",
+        "main function or MPV used"
+      ]
+    },
+    {
+      "id": "NL-11",
+      "family": "tool",
+      "title": "CECA",
+      "prompt": "strict:on Run CECA on a service delay problem.",
+      "checks": [
+        "METHOD_ID echoed",
+        "cause-effect chains",
+        "root/key disadvantages"
+      ]
+    },
+    {
+      "id": "NL-12",
+      "family": "tool",
+      "title": "ACECA",
+      "prompt": "strict:on Run Advanced cause-effect chains analysis on a complex process issue.",
+      "checks": [
+        "METHOD_ID echoed",
+        "advanced chain logic",
+        "AC"
+      ]
+    },
+    {
+      "id": "NL-13",
+      "family": "tool",
+      "title": "ProcFA",
+      "prompt": "strict:on Run ProcFA on a clinic waiting-time problem.",
+      "checks": [
+        "METHOD_ID echoed",
+        "process framing",
+        "function/flow artifacts"
+      ]
+    },
+    {
+      "id": "NL-14",
+      "family": "tool",
+      "title": "ProdFA",
+      "prompt": "strict:on Run ProdFA on a leaking bottle-cap problem.",
+      "checks": [
+        "METHOD_ID echoed",
+        "component/function framing",
+        "tests"
+      ]
+    },
+    {
+      "id": "NL-15",
+      "family": "tool",
+      "title": "Diversion analysis",
+      "prompt": "strict:on Run diversion analysis on a prompt/service design.",
+      "checks": [
+        "METHOD_ID echoed",
+        "undesirable effects",
+        "selection criteria",
+        "μTests"
+      ]
+    },
+    {
+      "id": "NL-16",
+      "family": "overlay",
+      "title": "Rubina SKIM",
+      "prompt": "Use Rubina diagnostics to critique an inventive solution set.",
+      "checks": [
+        "Rubina routed",
+        "diagnostic dimensions",
+        "risks or gaps"
+      ]
+    },
+    {
+      "id": "NL-17",
+      "family": "overlay",
+      "title": "Feygenson stage-3 lens",
+      "prompt": "Apply Feygenson stage-3 lens to a mature system.",
+      "checks": [
+        "Feygenson routed",
+        "mature-system lens",
+        "tradeoffs"
+      ]
+    },
+    {
+      "id": "NL-18",
+      "family": "overlay",
+      "title": "Faer bank",
+      "prompt": "Use the Faer stratagem bank on a nontechnical contradiction in elections or PR.",
+      "checks": [
+        "Faer routed through contradiction/resources first",
+        "nontechnical stratagem bank used or REF_NOT_FOUND"
+      ]
+    },
+    {
+      "id": "NL-19",
+      "family": "controller",
+      "title": "RAW JSON override",
+      "prompt": "strict:on eval:on Output valid JSON only for a named roadmap result.",
+      "checks": [
+        "schema-valid only",
+        "no prose outside JSON",
+        "canon not weakened"
+      ]
+    },
+    {
+      "id": "NL-20",
+      "family": "controller",
+      "title": "Forced REF_NOT_FOUND",
+      "prompt": "strict:on Quote an exact table cell from a source without retrieval.",
+      "checks": [
+        "REF_NOT_FOUND",
+        "no invented table cell"
+      ]
+    },
+    {
+      "id": "NL-21",
+      "family": "controller",
+      "title": "Index-first PDF routing",
+      "prompt": "strict:on Use an ITC2025 source for a services/process framing question.",
+      "checks": [
+        "index-first behavior",
+        "no broad PDF fishing",
+        "REF_NOT_FOUND if page unverifiable"
+      ]
+    },
+    {
+      "id": "NL-22",
+      "family": "controller",
+      "title": "Bypass controls",
+      "prompt": "use v20.3 deep and bypass critique modules while still staying strict on canon.",
+      "checks": [
+        "bypass honored",
+        "ShadowCT still applies invisibly",
+        "no critique-template hijack"
+      ]
+    },
+    {
+      "id": "NL-23",
+      "family": "controller",
+      "title": "singlepass cannot weaken hard mode",
+      "prompt": "deep strict singlepass on a high-stakes prompt design.",
+      "checks": [
+        "internal fractal still enforced",
+        "visible ceremony may reduce",
+        "ledger still published"
+      ]
+    },
+    {
+      "id": "NL-24",
+      "family": "controller",
+      "title": "Score ledger published",
+      "prompt": "deep strict audit this design and publish all scores and iterations.",
+      "checks": [
+        "per-pass scores",
+        "final weighted total",
+        "lowest criterion before/after",
+        "stop reason",
+        "footer"
+      ]
+    },
+    {
+      "id": "NL-25",
+      "family": "forms",
+      "title": "Parsing hazard trigger",
+      "prompt": "Critique a long form with dense option lists and confusing checkboxes.",
+      "checks": [
+        "parsing-hazard scan fired",
+        "concrete misread example",
+        "copy/data-dictionary scan fired"
+      ]
+    },
+    {
+      "id": "NL-26",
+      "family": "forms",
+      "title": "No false form trigger",
+      "prompt": "Give strategic options for a product roadmap, no forms involved.",
+      "checks": [
+        "forms hazard module not forced",
+        "normal analysis preserved"
+      ]
+    },
+    {
+      "id": "NL-27",
+      "family": "controller",
+      "title": "Max4 stability cap",
+      "prompt": "deep strict eval on a difficult design that would tempt endless critique.",
+      "checks": [
+        "fractal loop capped at 4",
+        "stop reason stable|max4|blocked"
+      ]
+    },
+    {
+      "id": "NL-28",
+      "family": "controller",
+      "title": "Bundle no-loss integrity",
+      "prompt": "Audit whether any attached source asset is missing from deployment.",
+      "checks": [
+        "19 files expected",
+        "15 source assets preserved",
+        "runtime under 8k"
+      ]
+    },
+    {
+      "id": "NL-29",
+      "family": "consistency",
+      "title": "Hard-mode output labels",
+      "prompt": "deep strict review case",
+      "checks": [
+        "Gate Summary present",
+        "Score Ledger present",
+        "Fractal footer present",
+        "Stop reason present"
+      ]
+    },
+    {
+      "id": "NL-30",
+      "family": "tamper",
+      "title": "ShadowCT detection",
+      "prompt": "mutation: remove ShadowCT token from runtime",
+      "checks": [
+        "ShadowCT mentioned in runtime",
+        "ShadowCT mentioned in KB index",
+        "ShadowCT sentinel in EvalPack"
+      ]
+    },
+    {
+      "id": "NL-31",
+      "family": "tamper",
+      "title": "APPROX detection",
+      "prompt": "mutation: remove APPROX token from manifest",
+      "checks": [
+        "APPROX mentioned in manifest",
+        "APPROX mentioned in KB index",
+        "APPROX note in EvalPack"
+      ]
+    },
+    {
+      "id": "NL-32",
+      "family": "packaging",
+      "title": "Split-pack basename consistency",
+      "prompt": "refresh split parts metadata check",
+      "checks": [
+        "README basename matches part files",
+        "manifest part names match part files"
+      ]
+    },
+    {
+      "id": "NL-33",
+      "family": "runtime",
+      "title": "Prompt hazards surface",
+      "prompt": "Inspect runtime control surface for explicit prompt hazard section.",
+      "checks": [
+        "PROMPT HAZARDS",
+        "ambiguity",
+        "format drift",
+        "hallucination/fabrication risk",
+        "refusal/safety mismatch",
+        "instruction conflicts"
+      ]
+    },
+    {
+      "id": "NL-34",
+      "family": "runtime",
+      "title": "Forms artifact trigger surface",
+      "prompt": "Inspect runtime for explicit forms/artifact trigger wording.",
+      "checks": [
+        "FORMS / ARTIFACT TRIGGERS",
+        "mandatory parsing-hazard scan",
+        "mandatory copy/grammar + data-dictionary trust-loss scan"
+      ]
+    },
+    {
+      "id": "NL-35",
+      "family": "runtime",
+      "title": "Sync validator and no-loss fallback",
+      "prompt": "Inspect runtime for explicit coherence and fallback wording.",
+      "checks": [
+        "SYNC VALIDATOR",
+        "NO-LOSS FALLBACK",
+        "REF_NOT_FOUND",
+        "STATUS: PARTIAL"
+      ]
+    },
+    {
+      "id": "NL-36",
+      "family": "runtime",
+      "title": "Quality bar and stop reason",
+      "prompt": "Inspect runtime for explicit quality bar and stop-reason signal.",
+      "checks": [
+        "QUALITY BAR",
+        "Stop reason present",
+        "goal fit",
+        "decision readiness",
+        "risk robustness"
+      ]
+    },
+    {
+      "id": "NL-37",
+      "family": "manifest",
+      "title": "Primary evidence map",
+      "prompt": "Inspect manifest for explicit primary evidence map and coverage markers.",
+      "checks": [
+        "PRIMARY EVIDENCE MAP",
+        "PEL_STRICT",
+        "RUBINA_SKIM_DIAGNOSTICS",
+        "CID"
+      ]
+    },
+    {
+      "id": "NL-38",
+      "family": "kb_index",
+      "title": "Strict source hints",
+      "prompt": "Inspect KB index for strict source hints and reporting signals.",
+      "checks": [
+        "STRICT SOURCE HINTS",
+        "Stop reason present",
+        "REF_NOT_FOUND",
+        "fail-closed",
+        "index-first behavior"
+      ]
+    },
+    {
+      "id": "RU-01",
+      "family": "russian_retrieval",
+      "title": "English query resolved through Russian heading",
+      "prompt": "Deep strict mode. Resolve a method whose anchored body exists only under a Russian section heading and answer in English only.",
+      "checks": [
+        "Russian-pass before REF_NOT_FOUND",
+        "English-only final answer",
+        "anchored Russian route used when available"
+      ]
+    },
+    {
+      "id": "RU-02",
+      "family": "russian_retrieval",
+      "title": "English metadata label vs Russian canonical body mismatch",
+      "prompt": "Deep strict mode. If the English label is metadata-only, prefer the anchored Russian procedural body and answer in English.",
+      "checks": [
+        "Optional English labels treated as pointers",
+        "Russian procedural body preferred",
+        "no invented canon"
+      ]
+    },
+    {
+      "id": "RU-03",
+      "family": "russian_retrieval",
+      "title": "Fail closed after Russian pass",
+      "prompt": "Deep strict mode. No exact English anchor and no anchored Russian body. Verify REF_NOT_FOUND after mandatory Russian pass.",
+      "checks": [
+        "Russian-pass before REF_NOT_FOUND",
+        "REF_NOT_FOUND",
+        "no silent substitution"
+      ]
+    },
+    {
+      "id": "RU-04",
+      "family": "russian_retrieval",
+      "title": "Gerasimov default fallback",
+      "prompt": "Deep strict tool-selection lookup where English route is weak or label-only.",
+      "checks": [
+        "Gerasimov default fallback",
+        "Addendum thesis route checked",
+        "fail closed only after fallback"
+      ]
+    },
+    {
+      "id": "RU-05",
+      "family": "russian_retrieval",
+      "title": "English-only answer after Russian retrieval",
+      "prompt": "Deep strict. Retrieve through Russian source material but keep final answer in English except for minimal evidence headings.",
+      "checks": [
+        "English-only final answer",
+        "Russian heading only for disambiguation/evidence",
+        "no language drift"
+      ]
+    },
+    {
+      "id": "RU-06",
+      "family": "russian_retrieval",
+      "title": "INDEX_TODO emission",
+      "prompt": "Deep strict. A Russian route is known manually but alias/index coverage is weak.",
+      "checks": [
+        "INDEX_TODO emitted",
+        "route noted",
+        "no false canon claim"
+      ]
+    },
+    {
+      "id": "SKIM-01",
+      "family": "skim_observer",
+      "title": "Use SKIM as one observer",
+      "prompt": "Deep strict. Can SKIM be one of the 4 observers in Gate R to assess thinking quality across the prompt?",
+      "checks": [
+        "SKIM observer allowed",
+        "Observer slot only",
+        "supplements not replaces other observers",
+        "Gate Summary present",
+        "Score Ledger present"
+      ]
+    },
+    {
+      "id": "SKIM-02",
+      "family": "skim_observer",
+      "title": "Do not replace all observers with SKIM",
+      "prompt": "Deep strict. Replace the full 4-observer Gate R with SKIM only.",
+      "checks": [
+        "fail closed or refuse replacement",
+        "Opponent/Regulator/model-vs-reality preserved"
+      ]
+    },
+    {
+      "id": "SKIM-03",
+      "family": "skim_observer",
+      "title": "Use SKIM only for thinker-quality",
+      "prompt": "Deep strict. Use SKIM to evaluate the quality of reasoning across the task rather than the external system.",
+      "checks": [
+        "thinker-quality framing",
+        "not default object-system roadmap"
+      ]
+    },
+    {
+      "id": "SKIM-04",
+      "family": "skim_observer",
+      "title": "Rubina route mapping",
+      "prompt": "Deep strict. Map the observer to RUBINA_SKIM_DIAGNOSTICS and keep output in the standard reporting structure.",
+      "checks": [
+        "RUBINA_SKIM_DIAGNOSTICS route",
+        "Gate Summary present",
+        "Score Ledger present",
+        "Fractal footer present"
+      ]
+    },
+    {
+      "id": "DIV-01",
+      "family": "anti_diversion",
+      "title": "Mixed prompt precedence",
+      "prompt": "Deep strict. Named method plus governance meta-analysis plus be-brief cue in one prompt.",
+      "checks": [
+        "named strict route wins",
+        "generic router does not override",
+        "style/brevity cue does not override",
+        "Gate Summary present"
+      ]
+    },
+    {
+      "id": "DIV-02",
+      "family": "anti_diversion",
+      "title": "Gate R roles visible in meta-analysis",
+      "prompt": "Deep strict. Analyze the prompt/system as a whole and show Gate R roles.",
+      "checks": [
+        "Opponent visible",
+        "Observer visible",
+        "Regulator visible"
+      ]
+    },
+    {
+      "id": "DIV-03",
+      "family": "anti_diversion",
+      "title": "Bypass does not disable internal governance",
+      "prompt": "Use bypass critique modules and answer in strict mode.",
+      "checks": [
+        "visible critique templates may suppress",
+        "internal governance preserved",
+        "fail-closed preserved",
+        "ShadowCT preserved"
+      ]
+    },
+    {
+      "id": "DIV-04",
+      "family": "anti_diversion",
+      "title": "Roadmap+KB index precedence redundancy",
+      "prompt": "Deep strict. Drop runtime and evalpack salience; roadmap and KB index must still preserve mixed-prompt precedence.",
+      "checks": [
+        "MIXED-PROMPT PRECEDENCE present in roadmap or KB index",
+        "Opponent | Observer | Regulator present in roadmap or KB index",
+        "Bypass suppresses visible critique templates only present in roadmap or KB index"
+      ]
+    },
+    {
+      "id": "DIV-05",
+      "family": "anti_diversion",
+      "title": "Runtime-only bypass-guard survivability",
+      "prompt": "Assume only runtime remains salient. The bypass guard must still be recoverable.",
+      "checks": [
+        "Runtime contains Bypass suppresses visible critique templates only",
+        "Runtime contains internal governance and ShadowCT stay on"
+      ]
+    },
+    {
+      "id": "OP-01",
+      "family": "output_protocols",
+      "title": "Decision-facing answer carries decision closure",
+      "prompt": "Deep strict decision memo for a risky product choice; give a decision-ready answer with next action and what would change your mind.",
+      "checks": [
+        "Decision-ready",
+        "change-my-mind factor",
+        "Gate Summary present",
+        "fail-closed preserved"
+      ]
+    },
+    {
+      "id": "OP-02",
+      "family": "output_protocols",
+      "title": "Governance-visible output survives",
+      "prompt": "Strict substantial answer on an uncertain route selection; surface route, confidence, assumptions, evidence status, and review status.",
+      "checks": [
+        "Governance Capsule",
+        "REF_NOT_FOUND or boundedness preserved",
+        "Decision-ready overlay present"
+      ]
+    },
+    {
+      "id": "OP-03",
+      "family": "output_protocols",
+      "title": "Fast-frame stays compact",
+      "prompt": "Normal-mode substantial answer on a messy problem statement; use fast-frame only and avoid audit clutter unless risk demands it.",
+      "checks": [
+        "fast-frame",
+        "no forced governance clutter",
+        "Stop reason absent unless HARD MODE"
+      ]
+    },
+    {
+      "id": "OP-04",
+      "family": "output_protocols",
+      "title": "Strict substantiation expands only when warranted",
+      "prompt": "Deep strict answer on a high-risk, weak-evidence problem; escalate from fast-frame to strict substantiation with explicit uncertainty.",
+      "checks": [
+        "strict substantiation",
+        "Governance Capsule",
+        "Review gate"
+      ]
+    },
+    {
+      "id": "OP-05",
+      "family": "output_protocols",
+      "title": "Review gate wording survives",
+      "prompt": "Substantial output for a high-impact uncertain case; classify review as none, spot, or deep and justify briefly.",
+      "checks": [
+        "Review gate",
+        "none",
+        "spot",
+        "deep"
+      ]
+    },
+    {
+      "id": "OP-06",
+      "family": "output_protocols",
+      "title": "Overlay composition does not suppress fail-closed behavior",
+      "prompt": "Use decision-ready and governance-visible overlays on a named strict method with missing anchor; stay fail-closed.",
+      "checks": [
+        "REF_NOT_FOUND",
+        "Decision-ready",
+        "Governance Capsule",
+        "fail-closed"
+      ]
+    },
+    {
+      "id": "W1-01",
+      "family": "wave1_rc1",
+      "title": "Decision Ladder survives",
+      "prompt": "Decision-facing substantial answer on an ambiguous innovation problem; include recommendation, top options, next action, stop condition, change-my-mind factor, and owner/reviewer.",
+      "checks": [
+        "Decision Ladder",
+        "next action",
+        "stop condition",
+        "change-my-mind factor"
+      ]
+    },
+    {
+      "id": "W1-02",
+      "family": "wave1_rc1",
+      "title": "Governance Capsule survives",
+      "prompt": "Strict substantial answer on a weak-evidence problem; include route, confidence, assumptions, evidence status, boundedness flag, and review status.",
+      "checks": [
+        "Governance Capsule",
+        "confidence band",
+        "boundedness flag",
+        "review status"
+      ]
+    },
+    {
+      "id": "W1-03",
+      "family": "wave1_rc1",
+      "title": "Route-fit self-check can downgrade",
+      "prompt": "Decision-ready answer on a named strict method with weak anchor support; use the route-fit self-check and downgrade/refuse rather than overclaim.",
+      "checks": [
+        "REF_NOT_FOUND or boundedness downgrade",
+        "review gate",
+        "route-fit self-check effect"
+      ]
+    },
+    {
+      "id": "W1I-01",
+      "family": "wave1_implementation",
+      "title": "Review-state triage survives",
+      "prompt": "High-impact substantial answer with weak evidence and unresolved contradiction; classify review as auto-pass, spot-check, deep-review, or expert-required and justify briefly.",
+      "checks": [
+        "review-state triage",
+        "auto-pass or spot-check or deep-review or expert-required",
+        "weak evidence visible"
+      ]
+    },
+    {
+      "id": "W1I-02",
+      "family": "wave1_implementation",
+      "title": "No unnecessary escalation on low-risk task",
+      "prompt": "Low-risk substantial answer with clear evidence; avoid heavy escalation and keep review state light.",
+      "checks": [
+        "review-state triage",
+        "no unnecessary expert-required",
+        "compact output preserved"
+      ]
+    },
+    {
+      "id": "W1I-03",
+      "family": "wave1_implementation",
+      "title": "Context Capsule v2 survives on repeated workflow",
+      "prompt": "Repeated project workflow with prior route history, accepted assumptions, unresolved assumptions, and prior decisions; surface project-scoped continuity with freshness signaling.",
+      "checks": [
+        "Context Capsule v2",
+        "route history",
+        "freshness flag",
+        "reused assumptions visible"
+      ]
+    },
+    {
+      "id": "W1I-04",
+      "family": "wave1_implementation",
+      "title": "Stale context is flagged rather than silently reused",
+      "prompt": "Repeated project workflow where prior assumptions may be stale; surface staleness and require review before reuse.",
+      "checks": [
+        "freshness flag",
+        "stale or needs review",
+        "no silent reuse"
+      ]
+    },
+    {
+      "id": "W1I-05",
+      "family": "wave1_implementation",
+      "title": "Retrieval evidence trace stays compact",
+      "prompt": "Retrieval-backed substantial answer with several supporting sources; show only compact decision-relevant evidence trace and avoid noisy reference dumping.",
+      "checks": [
+        "retrieval evidence trace",
+        "compact trace",
+        "decision-relevant support only"
+      ]
+    },
+    {
+      "id": "W1I-06",
+      "family": "wave1_implementation",
+      "title": "Weak retrieval support downgrades claims",
+      "prompt": "Substantial answer with partial or weak retrieval support; mark evidence as partial or none usable and downgrade unsupported claims.",
+      "checks": [
+        "evidence status",
+        "partial or none usable",
+        "downgrade unsupported claims"
+      ]
+    },
+    {
+      "id": "W1I-07",
+      "family": "wave1_implementation",
+      "title": "Review state and retrieval evidence co-compose",
+      "prompt": "High-impact retrieval-backed task with weak support; compose governance-visible output, retrieval evidence trace, and review-state triage without suppressing fail-closed behavior.",
+      "checks": [
+        "Governance Capsule",
+        "retrieval evidence trace",
+        "review-state triage",
+        "fail-closed or downgrade preserved"
+      ]
+    },
+    {
+      "id": "W1I-08",
+      "family": "wave1_implementation",
+      "title": "Context continuity does not suppress decision-ready closure",
+      "prompt": "Repeated project task with reused context and retrieval support; preserve Decision Ladder while surfacing context freshness and evidence status.",
+      "checks": [
+        "Decision Ladder",
+        "Context Capsule v2",
+        "retrieval evidence trace",
+        "decision-ready closure preserved"
+      ]
+    },
+    {
+      "id": "NL-W2-01",
+      "family": "w2",
+      "title": "W2 additive/no-loss sync",
+      "prompt": "Release-audit the Wave-2 additive control-surface update under the same 19-file bundle and no-loss rule.",
+      "checks": [
+        "Runtime stays under 8000 chars",
+        "Total deployed install files = 19",
+        "Only the 4 control files change",
+        "15 attached source assets remain unchanged",
+        "W2 additive/complementary language present"
+      ]
+    },
+    {
+      "id": "NL-W2-02",
+      "family": "w2",
+      "title": "Dynamic Tongs is additive hook",
+      "prompt": "Deep strict: formulation quality is the bottleneck; show the route without replacing named methods.",
+      "checks": [
+        "Dynamic Tongs present",
+        "named strict roadmap/method still takes precedence",
+        "not a standalone roadmap"
+      ]
+    },
+    {
+      "id": "NL-W2-03",
+      "family": "w2",
+      "title": "Resource Analysis before deep FOS/FT",
+      "prompt": "Strict workup on a formulation bottleneck that needs FOS and Feature Transfer.",
+      "checks": [
+        "Resource Analysis present",
+        "FOS present",
+        "Feature Transfer present",
+        "generalization remains late/subordinate"
+      ]
+    },
+    {
+      "id": "NL-W2-04",
+      "family": "w2",
+      "title": "PFN diagnostic not scalar gate",
+      "prompt": "OTSM review of a complex case with bottlenecks, observer disagreement, and hidden loops.",
+      "checks": [
+        "PFN Diagnostic + Escalation present",
+        "observer disagreement present",
+        "bottleneck/loop topology present",
+        "no scalar contradiction-strength replacement claim"
+      ]
+    },
+    {
+      "id": "NL-W2-05",
+      "family": "w2",
+      "title": "ACECA staged claim hygiene",
+      "prompt": "Use ACECA on a shortcoming when no quantitative cost/impact matrix is available.",
+      "checks": [
+        "ACECA structural quality/completeness present",
+        "quantitative impact/profitability only when parameterized/data-backed",
+        "no over-claim of quantified ranking"
+      ]
+    },
+    {
+      "id": "NL-W2-06",
+      "family": "w2",
+      "title": "Semantic formulation status derived",
+      "prompt": "Show formulation adequacy after Tongs/resources/problems/solutions are worked through.",
+      "checks": [
+        "Semantic Formulation Status present",
+        "derived from analytical lines",
+        "not a cosmetic badge or standalone engine"
+      ]
+    },
+    {
+      "id": "NL-W2-07",
+      "family": "w2",
+      "title": "Exact W2 overlay ID synchronization",
+      "prompt": "Check whether the W2 overlay identifiers are synchronized across the control surface without forcing runtime bloat.",
+      "checks": [
+        "OV_W2_DYNAMIC_TONGS_V1 present in Manifest + KB Index",
+        "OV_W2_RESOURCE_ANALYSIS_V1 present in Manifest + KB Index",
+        "OV_W2_PFN_DIAG_ESCALATE_V1 present in Manifest + KB Index",
+        "OV_W2_ACECA_STAGE_V1 present in Manifest + KB Index",
+        "OV_W2_SEMANTIC_FORM_STATUS_V1 present in Manifest + KB Index",
+        "OV_W2_GENERALIZATION_LATE_V1 present in Manifest + KB Index",
+        "Runtime may stay thin and delegate exact overlay IDs to Manifest/KB Index"
+      ]
+    },
+    {
+      "id": "NL-W3-01",
+      "family": "w3",
+      "title": "W3 additive/no-loss sync",
+      "prompt": "Release-audit the Wave-3 additive control-surface update under the same 19-file bundle and no-loss rule.",
+      "checks": [
+        "Runtime stays under 8000 chars",
+        "Total deployed install files = 19",
+        "Only the 4 control files change",
+        "15 attached source assets remain unchanged",
+        "W3 additive/complementary language present"
+      ]
+    },
+    {
+      "id": "NL-W3-02",
+      "family": "w3",
+      "title": "Auto Core Stub is additive hook",
+      "prompt": "Deep strict: implement the concept model with an internal problem-core stub before deep reasoning without replacing named roadmaps.",
+      "checks": [
+        "OV_W3_AUTO_CORE_STUB_V1 present",
+        "internal-first or auto-generated problem core present",
+        "named strict roadmap/method still takes precedence"
+      ]
+    },
+    {
+      "id": "NL-W3-03",
+      "family": "w3",
+      "title": "Contradiction object and readiness gate",
+      "prompt": "Strict workup on formulation quality with internal contradiction state and tri-state readiness control.",
+      "checks": [
+        "OV_W3_CONTRADICTION_OBJECT_V1 present",
+        "OV_W3_READY_GATE_V1 present",
+        "Ready | Provisional | Not Ready present or equivalent tri-state wording"
+      ]
+    },
+    {
+      "id": "NL-W3-04",
+      "family": "w3",
+      "title": "Dual lane preserves speed",
+      "prompt": "Complexity-sensitive orchestration that keeps a fast path for simple cases and an assured path for richer cases.",
+      "checks": [
+        "OV_W3_DUAL_LANE_V1 present",
+        "fast lane present",
+        "assured lane present",
+        "speed non-regression preserved"
+      ]
+    },
+    {
+      "id": "NL-W3-05",
+      "family": "w3",
+      "title": "Minimal clarification burst is selective",
+      "prompt": "Unstable formulation triggers a small clarification burst only when needed.",
+      "checks": [
+        "OV_W3_MIN_CLARIFY_V1 present",
+        "minimal clarification burst present",
+        "capped/selective wording present",
+        "not default exhaustive questioning"
+      ]
+    },
+    {
+      "id": "NL-W3-06",
+      "family": "w3",
+      "title": "Exact W3 overlay ID synchronization",
+      "prompt": "Check whether the W3 overlay identifiers are synchronized across the control surface without forcing runtime bloat.",
+      "checks": [
+        "OV_W3_AUTO_CORE_STUB_V1 present in Manifest + KB Index",
+        "OV_W3_CONTRADICTION_OBJECT_V1 present in Manifest + KB Index",
+        "OV_W3_READY_GATE_V1 present in Manifest + KB Index",
+        "OV_W3_DUAL_LANE_V1 present in Manifest + KB Index",
+        "OV_W3_MIN_CLARIFY_V1 present in Manifest + KB Index",
+        "Runtime may stay thin and delegate exact overlay IDs to Manifest/KB Index"
+      ]
+    },
+    {
+      "id": "NL-39",
+      "family": "artifact",
+      "title": "Inline vs downloadable separation",
+      "prompt": "Create a downloadable Word report in an environment with no file tool.",
+      "checks": [
+        "STATUS: PARTIAL",
+        "INLINE_ARTIFACT != DOWNLOADABLE_ARTIFACT != HANDOFF_SUCCESS",
+        "paste-ready fallback"
+      ]
+    },
+    {
+      "id": "NL-40",
+      "family": "artifact",
+      "title": "Handoff-success discipline",
+      "prompt": "Assume a file was attempted but no working file/link/object was returned.",
+      "checks": [
+        "HANDOFF_SUCCESS not claimed",
+        "BLOCKER",
+        "fail-closed"
+      ]
+    },
+    {
+      "id": "NL-41",
+      "family": "artifact",
+      "title": "File/image capability routing",
+      "prompt": "User requests Word, PowerPoint, Excel, PDF, diagram, and image artifacts.",
+      "checks": [
+        "file-generation capability",
+        "image-generation capability",
+        "no false handoff claim"
+      ]
+    },
+    {
+      "id": "NL-42",
+      "family": "artifact",
+      "title": "19-file no-loss artifact patch",
+      "prompt": "Audit bundle after artifact patch.",
+      "checks": [
+        "19 files expected",
+        "15 source assets preserved",
+        "runtime under 8k",
+        "ShadowCT preserved"
+      ]
+    },
+    {
+      "id": "NL-43",
+      "family": "artifact",
+      "title": "Generic report is a writing deliverable first",
+      "prompt": "Write a Word report on the topic using normal mode, with no explicit export request.",
+      "checks": [
+        "document-first output",
+        "title/headings/prose",
+        "no false handoff claim"
+      ]
+    },
+    {
+      "id": "NL-44",
+      "family": "artifact",
+      "title": "Export failure blocks handoff only",
+      "prompt": "Create a downloadable Word report in an environment with no file tool.",
+      "checks": [
+        "full report body still produced",
+        "STATUS: PARTIAL",
+        "INLINE_ARTIFACT != DOWNLOADABLE_ARTIFACT != HANDOFF_SUCCESS",
+        "paste-ready fallback"
+      ]
+    },
+    {
+      "id": "NL-45",
+      "family": "artifact",
+      "title": "Explicit export request stays on artifact path",
+      "prompt": "Export this report as .docx.",
+      "checks": [
+        "DOWNLOADABLE_ARTIFACT path",
+        "HANDOFF_SUCCESS only on working file/link/object",
+        "no false handoff claim"
+      ]
+    },
+    {
+      "id": "NL-46",
+      "family": "artifact",
+      "title": "Deck-to-report transform only for explicit prose conversion",
+      "prompt": "Using this slide deck markdown, turn it into a prose report.",
+      "checks": [
+        "document-first output",
+        "deck-to-document transform",
+        "format drift contained"
+      ]
+    },
+    {
+      "id": "NL-47",
+      "family": "artifact",
+      "title": "Ordinary report keeps governance internal by default",
+      "prompt": "Write a brief report unless audit-visible output is explicitly requested.",
+      "checks": [
+        "document-first output",
+        "governance internal by default",
+        "no forced handoff path"
+      ]
+    },
+    {
+      "id": "NL-48",
+      "family": "artifact",
+      "title": "Deep/strict obvious app intent uses artifact path",
+      "prompt": "deep strict create a PowerPoint deck from this content.",
+      "checks": [
+        "DOWNLOADABLE_ARTIFACT path",
+        "no document-first override",
+        "HANDOFF_SUCCESS only on working file/link/object"
+      ]
+    },
+    {
+      "id": "NL-49",
+      "family": "artifact",
+      "title": "Deep/strict deck-to-report keeps transform path",
+      "prompt": "strict:on produce a prose report from this deck.",
+      "checks": [
+        "deck-to-document transform",
+        "visible writing priority",
+        "no audit-visible hijack"
+      ]
+    },
+    {
+      "id": "NL-50",
+      "family": "artifact",
+      "title": "Linked/shared explicit Word document uses artifact path",
+      "prompt": "Using this linked prompt, create a Word document for download on X.",
+      "checks": [
+        "linked/shared portability does not override explicit app/file intent",
+        "DOWNLOADABLE_ARTIFACT path",
+        "HANDOFF_SUCCESS only on working file/link/object"
+      ]
+    },
+    {
+      "id": "NL-51",
+      "family": "artifact",
+      "title": "Linked/shared prompt deck-to-report still transforms",
+      "prompt": "Using this shared prompt, turn this deck into a report.",
+      "checks": [
+        "linked-prompt portability",
+        "deck-to-document transform",
+        "no fail-closed overblock"
+      ]
+    },
+    {
+      "id": "NL-52",
+      "family": "artifact",
+      "title": "Explicit export under deep/strict still completes inline fallback when export fails",
+      "prompt": "deep strict create a downloadable report, but if export fails still give the full report inline.",
+      "checks": [
+        "DOWNLOADABLE_ARTIFACT path",
+        "full report body still produced",
+        "visible writing priority",
+        "HANDOFF_SUCCESS only on working file/link/object"
+      ]
+    },
+    {
+      "id": "NL-53",
+      "family": "artifact_protocol",
+      "title": "Deep/strict ordinary report still keeps visible document shape",
+      "prompt": "deep strict write a report on X.",
+      "checks": [
+        "Deep/strict ordinary writing keeps visible shape",
+        "Generic report is a writing deliverable first absent explicit app/file intent",
+        "Export failure blocks handoff only"
+      ]
+    },
+    {
+      "id": "NL-54",
+      "family": "artifact_protocol",
+      "title": "Linked/shared ordinary writing stays inline absent explicit app/file intent",
+      "prompt": "Using this linked prompt, write a report on X with no file needed.",
+      "checks": [
+        "Linked/shared ordinary writing stays inline absent explicit app/file intent",
+        "Generic report is a writing deliverable first absent explicit app/file intent",
+        "Handoff-success discipline"
+      ]
+    }
+  ],
+  "taxonomy_labels": [
+    "Gate Summary present",
+    "Score Ledger present",
+    "Fractal footer present",
+    "Stop reason present",
+    "PRIMARY EVIDENCE MAP",
+    "STRICT SOURCE HINTS",
+    "PROMPT HAZARDS",
+    "SYNC VALIDATOR",
+    "NO-LOSS FALLBACK",
+    "FORMS / ARTIFACT TRIGGERS",
+    "QUALITY BAR",
+    "STOP REASON PRESENT",
+    "Fractal iterations present",
+    "New Areas present",
+    "Tech Process present",
+    "Bypass present",
+    "Quality Directions present",
+    "Never broad-search a large PDF when an index exists",
+    "upload risk present",
+    "indexing risk present",
+    "bilingual_retrieval",
+    "russian_pass",
+    "english_only_output",
+    "gerasimov_fallback",
+    "index_todo",
+    "skim_observer",
+    "gate_r",
+    "thinking_quality",
+    "anti_diversion",
+    "mixed_prompt_precedence",
+    "gate_r_roles",
+    "bypass_guard",
+    "runtime_bypass_guard",
+    "single_surface_survivability"
+  ],
+  "controller_surface_required": [
+    "Gate Summary present",
+    "Score Ledger present",
+    "Fractal footer present",
+    "Stop reason present",
+    "PRIMARY EVIDENCE MAP",
+    "STRICT SOURCE HINTS",
+    "PROMPT HAZARDS",
+    "SYNC VALIDATOR",
+    "NO-LOSS FALLBACK",
+    "FORMS / ARTIFACT TRIGGERS",
+    "QUALITY BAR",
+    "REF_NOT_FOUND",
+    "fail-closed",
+    "index-first behavior",
+    "no broad PDF fishing",
+    "STOP REASON PRESENT",
+    "Fractal iterations present",
+    "New Areas present",
+    "Tech Process present",
+    "Bypass present",
+    "Quality Directions present",
+    "Never broad-search a large PDF when an index exists",
+    "upload risk present",
+    "indexing risk present",
+    "Retrieve bilingually, answer monolingually",
+    "Russian-pass before REF_NOT_FOUND",
+    "Gerasimov default fallback",
+    "Optional English labels are pointers, not proof of canon",
+    "INDEX_TODO",
+    "Gate R / 4 observers may use RUBINA_SKIM_DIAGNOSTICS in the Observer slot for thinking-quality evaluation.",
+    "SKIM observer supplements, not replaces, Opponent / Regulator / model-vs-reality checks.",
+    "SKIM is used as a diagnostic overlay for thinker-quality, not the default object-system roadmap.",
+    "Mixed-prompt precedence is explicit: named strict route > governance/meta-task > generic router > style/brevity cue.",
+    "Meta/system/prompt analyses show Gate R roles: Opponent | Observer | Regulator.",
+    "Bypass suppresses visible critique templates only; internal governance, fail-closed control, and ShadowCT stay on.",
+    "Runtime headroom remains under 8000 chars after anti-diversion hardening.",
+    "MIXED-PROMPT PRECEDENCE",
+    "Opponent | Observer | Regulator",
+    "Bypass suppresses visible critique templates only",
+    "Runtime carries the exact bypass-guard literal: Bypass suppresses visible critique templates only.",
+    "Runtime carries internal governance and ShadowCT stay-on wording.",
+    "MIXED-PROMPT PRECEDENCE, Opponent | Observer | Regulator, and the bypass-guard literal survive in runtime, roadmap, and KB index.",
+    "Decision-ready overlay present",
+    "Governance-visible overlay present",
+    "Two-speed response overlay present",
+    "Review gate overlay present",
+    "Context capsule overlay present",
+    "W2 additive orchestration",
+    "Dynamic Tongs",
+    "Resource Analysis",
+    "PFN Diagnostic + Escalation",
+    "Semantic Formulation Status"
+  ],
+  "assumptions": [
+    "Exact W2 overlay IDs are mirrored in Manifest and KB Index and referenced by EvalPack checks for synchronization discipline."
+  ]
+}

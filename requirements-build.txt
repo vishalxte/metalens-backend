@@ -1,0 +1,8 @@
+# Build-time only, kept out of requirements.txt on purpose so that
+# installing the app for normal local development never drags in a C
+# compiler toolchain.
+#
+# Pinned: a Nuitka upgrade can change what compiles cleanly, and an
+# unpinned build tool is the classic "but it built last week" bug.
+# This is the version the .so in build/ was produced and tested with.
+nuitka==2.7.12

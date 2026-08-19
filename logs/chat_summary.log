@@ -1,0 +1,1474 @@
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 17-Jul-2026 15:14:41
+Request ID     : 857eaf3d-c5c2-4368-89b9-43b847b0c771
+Customer       : 10
+Super Admin ID : -
+User           : ram@example.com (USER)
+Conversation   : 36
+Question       : explain me tender  contract duration
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : HIT
+Semantic Cache : N/A
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 0
+Completion     : 0
+Total Tokens   : 0
+Total API Time : 0.03 sec
+Exact Cache    : Not written
+Semantic Cache : Not written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 17-Jul-2026 15:19:36
+Request ID     : cfc5788d-7c5f-41b1-8a83-8c2b60741d09
+Customer       : 10
+Super Admin ID : -
+User           : ram@example.com (USER)
+Conversation   : 36
+Question       : explain me Pre-Bid details?
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : MISS
+Semantic Cache : HIT
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 0
+Completion     : 0
+Total Tokens   : 0
+Embedding Time : 1.99 sec
+Total API Time : 2.00 sec
+Exact Cache    : Written
+Semantic Cache : Not written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 17-Jul-2026 15:20:24
+Request ID     : e6fa06f4-586d-4ac7-bcc6-08e3126ecf43
+Customer       : 10
+Super Admin ID : -
+User           : ram@example.com (USER)
+Conversation   : 36
+Question       : what is pre-bid?
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : MISS
+Semantic Cache : HIT
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 0
+Completion     : 0
+Total Tokens   : 0
+Embedding Time : 1.03 sec
+Total API Time : 2.15 sec
+Exact Cache    : Written
+Semantic Cache : Not written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 17-Jul-2026 15:26:22
+Request ID     : 8d020513-8be9-4e1a-ba58-20e95a3d9c77
+Customer       : 10
+Super Admin ID : -
+User           : ram@example.com (USER)
+Conversation   : 36
+Question       : Pre-Bid
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : HIT
+Semantic Cache : N/A
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 0
+Completion     : 0
+Total Tokens   : 0
+Total API Time : 1.05 sec
+Exact Cache    : Not written
+Semantic Cache : Not written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 17-Jul-2026 15:35:08
+Request ID     : 5947bddf-0b08-4704-9080-2a5bbbc65dfe
+Customer       : 10
+Super Admin ID : -
+User           : ram@example.com (USER)
+Conversation   : 36
+Question       : give me S. N Description Details
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 56 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 10213
+Completion     : 356
+Total Tokens   : 10569
+Embedding Time : 2.50 sec
+LLM Time       : 20.00 sec
+Total API Time : 22.58 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 17-Jul-2026 15:49:24
+Request ID     : 17ae7e67-e867-4d31-9661-973748f25c30
+Customer       : 10
+Super Admin ID : -
+User           : ram@example.com (USER)
+Conversation   : 36
+Question       : Data Standards will be accessed at which url?
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 44 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 7627
+Completion     : 30
+Total Tokens   : 7657
+Embedding Time : 2.63 sec
+LLM Time       : 2.61 sec
+Total API Time : 5.30 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 17-Jul-2026 15:54:56
+Request ID     : 0afe2b73-c127-454a-bf9a-dbbe60a82032
+Customer       : 10
+Super Admin ID : -
+User           : ram@example.com (USER)
+Conversation   : 36
+Question       : Data Standards will be accessed at which url?
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : HIT
+Semantic Cache : N/A
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 0
+Completion     : 0
+Total Tokens   : 0
+Total API Time : 0.03 sec
+Exact Cache    : Not written
+Semantic Cache : Not written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 17-Jul-2026 15:56:31
+Request ID     : 455883dd-b824-4ff3-9c01-ff1de837ace2
+Customer       : 10
+Super Admin ID : -
+User           : ram@example.com (USER)
+Conversation   : 36
+Question       : Bidder must conduct periodic reviews and meetings with  whome?
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 52 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 9819
+Completion     : 52
+Total Tokens   : 9871
+Embedding Time : 6.49 sec
+LLM Time       : 6.47 sec
+Total API Time : 13.04 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 17-Jul-2026 15:57:40
+Request ID     : 7f1f50d7-3f8c-4cdc-a780-e3e1bdce7138
+Customer       : 10
+Super Admin ID : -
+User           : ram@example.com (USER)
+Conversation   : 36
+Question       : Bidder must conduct periodic reviews and meetings with  whome?
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : HIT
+Semantic Cache : N/A
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 0
+Completion     : 0
+Total Tokens   : 0
+Total API Time : 0.00 sec
+Exact Cache    : Not written
+Semantic Cache : Not written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 20-Jul-2026 13:05:35
+Request ID     : a23c85a2-8cf0-4dd7-ba31-abaa87a8aad6
+Customer       : 6
+Super Admin ID : -
+User           : rushi@example.com (USER)
+Conversation   : 34
+Question       : explain me about tender
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 0 chunks
+Merged Results : 40 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 7562
+Completion     : 11
+Total Tokens   : 7573
+Embedding Time : 2.29 sec
+LLM Time       : 2.40 sec
+Total API Time : 4.83 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 21-Jul-2026 17:41:20
+Request ID     : 8c75c916-f12d-48d0-898a-be58a84d6328
+Customer       : 6
+Super Admin ID : -
+User           : rushi@example.com (USER)
+Conversation   : 37
+Question       : explain me all abount tender
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : MISS
+Semantic Cache : HIT
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 0
+Completion     : 0
+Total Tokens   : 0
+Embedding Time : 3.68 sec
+Total API Time : 3.73 sec
+Exact Cache    : Written
+Semantic Cache : Not written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 21-Jul-2026 17:43:12
+Request ID     : 01be4172-b0fc-4c2e-b735-4898e8749266
+Customer       : 6
+Super Admin ID : -
+User           : rushi@example.com (USER)
+Conversation   : 37
+Question       : explain me complete backend fast api structure
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 48 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 9481
+Completion     : 1024
+Total Tokens   : 10505
+Embedding Time : 1.58 sec
+LLM Time       : 18.41 sec
+Total API Time : 20.09 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 21-Jul-2026 17:44:09
+Request ID     : 1fb29c25-df0a-4aee-ba52-89bc918f1915
+Customer       : 6
+Super Admin ID : -
+User           : rushi@example.com (USER)
+Conversation   : 37
+Question       : explain me all about medical field?
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 4 chunks
+Merged Results : 41 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 8172
+Completion     : 11
+Total Tokens   : 8183
+Embedding Time : 0.65 sec
+LLM Time       : 2.83 sec
+Total API Time : 3.53 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 21-Jul-2026 17:44:41
+Request ID     : a53d6f4f-f1af-45e7-b75e-6d0e9837e86e
+Customer       : 6
+Super Admin ID : -
+User           : rushi@example.com (USER)
+Conversation   : 37
+Question       : explain me all important about health
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 12 chunks
+Merged Results : 46 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 9243
+Completion     : 11
+Total Tokens   : 9254
+Embedding Time : 0.35 sec
+LLM Time       : 1.57 sec
+Total API Time : 1.95 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 21-Jul-2026 17:45:58
+Request ID     : 703d3cad-28a2-43a1-9148-b4ecd39dd7f8
+Customer       : 6
+Super Admin ID : -
+User           : rushi@example.com (USER)
+Conversation   : 37
+Question       : majya project madhe symantic cache kase work karte mala detail madhe sang
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 44 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 8450
+Completion     : 615
+Total Tokens   : 9065
+Embedding Time : 10.89 sec
+LLM Time       : 13.53 sec
+Total API Time : 24.47 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 24-Jul-2026 16:22:26
+Request ID     : 943b4ae1-4303-4054-a0d3-d9db9db888f8
+Customer       : 6
+Super Admin ID : -
+User           : rushi@example.com (USER)
+Conversation   : 38
+Question       : hii
+Authentication : ✅ Success
+Conversation   : ✅ Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 0 chunks
+Merged Results : 0 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 385
+Completion     : 11
+Total Tokens   : 396
+Embedding Time : 2.56 sec
+LLM Time       : 1.96 sec
+Total API Time : 4.69 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 12:34:39
+Request ID     : 75a2c2c5-dcdf-471a-abb7-04aae0379913
+Customer       : 4
+Super Admin ID : -
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 39
+Question       : What is the complete scope of work expected from the selected bidder for the Budget & Geo Tracking Management System project?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 20 chunks
+Merged Results : 20 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 4984
+Completion     : 11
+Total Tokens   : 4995
+Embedding Time : 2.91 sec
+LLM Time       : 1.88 sec
+Total API Time : 5.04 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 12:35:35
+Request ID     : 13d75390-2a65-4e84-9330-1d072315ecd7
+Customer       : 4
+Super Admin ID : -
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 39
+Question       : What are the 19 required install-bundle files, and why are the two metadata files not considered part of the install bundle?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 20 chunks
+Merged Results : 20 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 5515
+Completion     : 337
+Total Tokens   : 5852
+Embedding Time : 1.73 sec
+LLM Time       : 13.56 sec
+Total API Time : 15.41 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 12:56:31
+Request ID     : eff47126-4e7e-45d3-a6ef-899599677d1f
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 39
+Question       : What is the purpose of the MetaLens Runtime Compact v31.12 rc7, and what does the "NO-LOSS sync" rule require during deployment?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 20 chunks
+Merged Results : 20 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 5832
+Completion     : 174
+Total Tokens   : 6006
+Embedding Time : 0.96 sec
+LLM Time       : 3.50 sec
+Total API Time : 6.92 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 15:58:23
+Request ID     : 760b6af4-334a-4fa7-833d-28c5bec20756
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : explain me all about meta_lens
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 20 chunks
+Merged Results : 20 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 4925
+Completion     : 455
+Total Tokens   : 5380
+Embedding Time : 1.11 sec
+LLM Time       : 6.18 sec
+Total API Time : 7.40 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 15:59:25
+Request ID     : 1d3cd612-7e6e-4a5e-a0db-39e35eac9a33
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : he triz asia kay ahe te mala sang
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 20 chunks
+Merged Results : 20 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 4205
+Completion     : 11
+Total Tokens   : 4216
+Embedding Time : 0.45 sec
+LLM Time       : 1.51 sec
+Total API Time : 3.39 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 16:00:14
+Request ID     : 5e980c0f-fffa-4df2-a736-6bfb02fe9629
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : TRIZ_COMPILER_REGISTRY he kay ahe te mala sang
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 20 chunks
+Merged Results : 20 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 4393
+Completion     : 11
+Total Tokens   : 4404
+Embedding Time : 1.42 sec
+LLM Time       : 1.20 sec
+Total API Time : 4.08 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 16:01:52
+Request ID     : a3436e8b-e710-4f89-aca3-4d5119364b64
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : MetaLens_v28.1.0_TRIZ_Corpus he kay aahe
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 20 chunks
+Merged Results : 20 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 6126
+Completion     : 11
+Total Tokens   : 6137
+Embedding Time : 0.61 sec
+LLM Time       : 1.13 sec
+Total API Time : 3.07 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 16:02:02
+Request ID     : c6a2163d-cfc0-4d8b-b504-daa1adbe4ded
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : explain me MetaLens_v28.1.0_TRIZ_Corpus
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 20 chunks
+Merged Results : 20 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 6121
+Completion     : 11
+Total Tokens   : 6132
+Embedding Time : 0.44 sec
+LLM Time       : 1.53 sec
+Total API Time : 3.58 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 16:02:36
+Request ID     : ad4555af-6d53-4437-b135-c9c6e7a55235
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : explain me ANTI-DIVERSION POLICY MIXED-PROMPT PRECEDENCE
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 20 chunks
+Merged Results : 20 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 4915
+Completion     : 235
+Total Tokens   : 5150
+Embedding Time : 0.43 sec
+LLM Time       : 4.28 sec
+Total API Time : 4.81 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 16:04:31
+Request ID     : 65da22b3-4cab-4a2a-bfd5-b2e05b38790e
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : INDEX-FIRST RULE he kay aahe
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 20 chunks
+Merged Results : 20 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 4971
+Completion     : 189
+Total Tokens   : 5160
+Embedding Time : 0.43 sec
+LLM Time       : 5.17 sec
+Total API Time : 8.24 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 16:05:28
+Request ID     : 7d247b70-2f16-4279-a6b6-363c7b0df365
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : MetaLens v44 Capability Transfer Pack (integrated) explain me
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 20 chunks
+Merged Results : 20 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 6086
+Completion     : 11
+Total Tokens   : 6097
+Embedding Time : 0.54 sec
+LLM Time       : 1.88 sec
+Total API Time : 2.59 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 16:05:44
+Request ID     : a16e9995-ba1d-4395-a5e3-036f3cca9fb8
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : MetaLens v44 Capability Transfer Pack he kay aahe
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 20 chunks
+Merged Results : 20 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 6054
+Completion     : 11
+Total Tokens   : 6065
+Embedding Time : 0.44 sec
+LLM Time       : 1.31 sec
+Total API Time : 3.25 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 16:25:04
+Request ID     : 7352498a-c29d-4367-8c0a-693d579f4ca8
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : MetaLens v44 Capability Transfer Pack he kay aahe
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 49 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 13089
+Completion     : 320
+Total Tokens   : 13409
+Embedding Time : 0.46 sec
+LLM Time       : 3.87 sec
+Total API Time : 6.24 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 16:26:01
+Request ID     : 2546cfcd-ea0a-47e1-8ec7-13c86f9b7d19
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : explain me MetaLens_v28.1.0_TRIZ_Corpus
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 49 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 13744
+Completion     : 266
+Total Tokens   : 14010
+Embedding Time : 0.44 sec
+LLM Time       : 3.99 sec
+Total API Time : 6.03 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 18:06:29
+Request ID     : 6b795e11-52ce-482b-bbe0-6e24e13ea5a9
+Customer       : 6
+Super Admin ID : 8
+User           : rushi@example.com (USER)
+Conversation   : 41
+Question       : hiii
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 0 chunks
+Merged Results : 0 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 386
+Completion     : 11
+Total Tokens   : 397
+Embedding Time : 2.65 sec
+LLM Time       : 2.12 sec
+Total API Time : 4.84 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 18:06:53
+Request ID     : 2062f00c-ae81-4fb8-8f16-d5cf25aa20a2
+Customer       : 6
+Super Admin ID : 8
+User           : rushi@example.com (USER)
+Conversation   : 41
+Question       : explain me what is that meta_lens means
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 0 chunks
+Merged Results : 0 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 390
+Completion     : 11
+Total Tokens   : 401
+Embedding Time : 0.64 sec
+LLM Time       : 1.01 sec
+Total API Time : 3.57 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 18:09:42
+Request ID     : ece30e93-c8f5-4dc7-afaa-65b0d61cc1f0
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : MetaLens v44 Capability Transfer Pack (integrated) explain me
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 49 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 13039
+Completion     : 276
+Total Tokens   : 13315
+Embedding Time : 3.31 sec
+LLM Time       : 5.62 sec
+Total API Time : 9.10 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 18:10:03
+Request ID     : 054b3780-292f-41da-a46c-4934f491e6ef
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : TRIZ_COMPILER_REGISTRY he kay ahe te mala sang
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 49 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 10927
+Completion     : 678
+Total Tokens   : 11605
+Embedding Time : 0.50 sec
+LLM Time       : 9.31 sec
+Total API Time : 11.18 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 05-Aug-2026 18:14:12
+Request ID     : 35913501-d034-45ba-a004-078abefd3b8b
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 40
+Question       : TRIZ_COMPILER_REGISTRY he kay ahe te mala sang
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 44 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 9957
+Completion     : 289
+Total Tokens   : 10246
+Embedding Time : 0.89 sec
+LLM Time       : 5.91 sec
+Total API Time : 8.02 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 10:12:43
+Request ID     : a03caff3-edd7-4c95-9426-c64dfd07888c
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 42
+Question       : explain me MetaLens_v31.12_W3_rc7_Part_6_Medium in detail?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 45 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 12348
+Completion     : 134
+Total Tokens   : 12482
+Embedding Time : 2.71 sec
+LLM Time       : 3.00 sec
+Total API Time : 5.96 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 12:47:47
+Request ID     : b6811a30-2706-4630-bb3c-70c5d15e1423
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 42
+Question       : explain me all detail mabout metalens
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : HIT
+Semantic Cache : N/A
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 0
+Completion     : 0
+Total Tokens   : 0
+Total API Time : 0.01 sec
+Exact Cache    : Not written
+Semantic Cache : Not written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 12:48:11
+Request ID     : e4af3aa2-9664-4787-af0e-7da73912f071
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 42
+Question       : What is the purpose of the MetaLens Runtime Compact v31.12 rc7, and what does the "NO-LOSS sync" rule require during deployment?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : HIT
+Semantic Cache : N/A
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 0
+Completion     : 0
+Total Tokens   : 0
+Total API Time : 1.38 sec
+Exact Cache    : Not written
+Semantic Cache : Not written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 12:48:26
+Request ID     : 8aec0c96-bc12-4df0-b192-56f71f73073b
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 42
+Question       : What are the responsibilities and requirements related to User Acceptance Testing (UAT), Security Audit, Operation & Maintenance (O&M), Service Level Agreement (SLA), and Project Timelines in this tender?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : HIT
+Semantic Cache : N/A
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 0
+Completion     : 0
+Total Tokens   : 0
+Total API Time : 0.98 sec
+Exact Cache    : Not written
+Semantic Cache : Not written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 12:48:59
+Request ID     : 9eaa9962-d6ec-49e7-9e5a-27745a02734a
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 42
+Question       : What is the complete scope of work expected from the selected bidder for the Budget & Geo Tracking Management System project?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 57 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 13243
+Completion     : 11
+Total Tokens   : 13254
+Embedding Time : 0.45 sec
+LLM Time       : 5.08 sec
+Total API Time : 5.72 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 12:49:30
+Request ID     : a0e6e572-a372-4460-999d-a8362ba18a08
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 42
+Question       : What are the 19 required install-bundle files, and why are the two metadata files not considered part of the install bundle?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 54 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 14303
+Completion     : 607
+Total Tokens   : 14910
+Embedding Time : 0.42 sec
+LLM Time       : 13.54 sec
+Total API Time : 14.15 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 13:02:39
+Request ID     : aea3cca8-54c8-43df-9de7-6fef7369862b
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 42
+Question       : What are the 19 required install-bundle files, and why are the two metadata files not considered part of the install bundle?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : HIT
+Semantic Cache : N/A
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 0
+Completion     : 0
+Total Tokens   : 0
+Total API Time : 0.01 sec
+Exact Cache    : Not written
+Semantic Cache : Not written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 13:03:44
+Request ID     : 72c4abd6-bf5e-45b3-8cfd-1bb32c300835
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 42
+Question       : what is metadata ?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 6 chunks
+Merged Results : 45 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 10664
+Completion     : 11
+Total Tokens   : 10675
+Embedding Time : 26.78 sec
+LLM Time       : 1.97 sec
+Total API Time : 28.89 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 14:16:26
+Request ID     : f4de7158-1194-4b75-a03a-6097b1ef8b10
+Customer       : 6
+Super Admin ID : 8
+User           : rushi@example.com (USER)
+Conversation   : 43
+Question       : what is metalens?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 0 chunks
+Keyword Search : 0 chunks
+Merged Results : 0 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 388
+Completion     : 11
+Total Tokens   : 399
+Embedding Time : 1.65 sec
+LLM Time       : 1.20 sec
+Total API Time : 2.90 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 14:21:23
+Request ID     : 460aac33-f47e-45ec-8371-59df3000892a
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 44
+Question       : What is the purpose of the ITC 2025 MATRIZ Proceedings Index?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 56 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 12670
+Completion     : 102
+Total Tokens   : 12772
+Embedding Time : 0.49 sec
+LLM Time       : 4.66 sec
+Total API Time : 5.26 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 14:21:46
+Request ID     : 468a8c09-3239-49b5-88b5-7c718d180023
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 44
+Question       : What is the PDF page mapping rule mentioned in the document?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 54 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 12311
+Completion     : 85
+Total Tokens   : 12396
+Embedding Time : 1.62 sec
+LLM Time       : 3.77 sec
+Total API Time : 5.55 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 15:11:05
+Request ID     : 9cd65458-b2bd-4b9d-b40a-fb9819973bad
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 45
+Question       : What is the main topic of paper ITC2025_P043_TRIZ_LLMs_Hybrid_Patent?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 45 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 9480
+Completion     : 170
+Total Tokens   : 9650
+Embedding Time : 2.55 sec
+LLM Time       : 6.75 sec
+Total API Time : 9.48 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 15:20:43
+Request ID     : 6faeaa2e-1690-478c-b4bf-8662c78ac8fa
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 45
+Question       : What is the purpose of the contradiction extraction micro-checklist?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 51 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 11538
+Completion     : 86
+Total Tokens   : 11624
+Embedding Time : 0.49 sec
+LLM Time       : 3.43 sec
+Total API Time : 4.11 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 10-Aug-2026 15:23:28
+Request ID     : 26cfcb8c-348b-4ae3-84f4-bbd62a91c1a4
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 45
+Question       : What does the contradiction normalization step mean in the context of the document?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 52 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 11322
+Completion     : 151
+Total Tokens   : 11473
+Embedding Time : 1.23 sec
+LLM Time       : 4.80 sec
+Total API Time : 6.20 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 14-Aug-2026 15:45:12
+Request ID     : af6d613e-5c56-465a-9a28-001ea5e669d5
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 47
+Question       : What are the extracted stratagem names R12, R13, R14, R32, and R33?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : MISS
+Vector Search  : 40 chunks
+Keyword Search : 20 chunks
+Merged Results : 53 unique chunks
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 13517
+Completion     : 132
+Total Tokens   : 13649
+Embedding Time : 2.70 sec
+LLM Time       : 4.52 sec
+Total API Time : 7.49 sec
+Exact Cache    : Written
+Semantic Cache : Written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════
+AI CHAT REQUEST SUMMARY
+═══════════════════════════════════════════════════════════════════
+Date           : 14-Aug-2026 15:46:11
+Request ID     : 36993825-d162-411e-b95c-77f499aa603c
+Customer       : 4
+Super Admin ID : 8
+User           : mahindra@example.com (CUSTOMER)
+Conversation   : 47
+Question       : What are the extracted stratagem names R51, R52, R53, R54, and R61?
+Authentication : Success
+Conversation   : Verified
+Exact Cache    : MISS
+Semantic Cache : HIT
+Embedding Model: text-embedding-3-small
+LLM Model      : gpt-4o-mini
+Prompt Tokens  : 0
+Completion     : 0
+Total Tokens   : 0
+Embedding Time : 0.50 sec
+Total API Time : 0.51 sec
+Exact Cache    : Written
+Semantic Cache : Not written
+Chat History   : Saved
+Status         : HTTP 200
+═══════════════════════════════════════════════════════════════════

@@ -1,0 +1,1285 @@
+{
+  "version": "TRIZ_COMPILER_REGISTRY_v2.5_bilingual__FAERBANK_FEYGENSON_v1",
+  "canonical_analytical_tools": [
+    "MPV",
+    "SYSTEM_BOUNDARY_MAP",
+    "PRODFA_STRICT",
+    "PROCFA_STRICT",
+    "CECA",
+    "CONTRADICTION_ANALYSIS",
+    "RESOURCE_ANALYSIS",
+    "PRODUCT_TRIMMING_STRICT",
+    "PROCESS_TRIMMING_STRICT",
+    "TESE",
+    "PEL_STRICT",
+    "ROBUSTNESS_HIDDEN_FAILURE_MAPPING",
+    "DIVERSION_ANALYSIS",
+    "CID_CORE_OVERLAY",
+    "ARIZ_85C"
+  ],
+  "global_contract": {
+    "required_fields_for_strict_triz": [
+      "METHOD_KEY",
+      "BOUNDARY",
+      "ANCHOR_LOCK"
+    ],
+    "fail_closed_token": "REF_NOT_FOUND",
+    "disambig_gate_if_missing_method": true,
+    "strict_hard_modes": [
+      "deep",
+      "strict",
+      "eval",
+      "audit",
+      "release",
+      "decision",
+      "no-loss"
+    ],
+    "strict_final_answer_gate": {
+      "require_p3_stable": true,
+      "require_q1_q4_pass": true,
+      "require_required_artifacts": true,
+      "require_p4_stop_go_pass": true,
+      "on_downgrade_or_gap": "STATUS: PARTIAL"
+    },
+    "strict_bypass_controls_visibility_only": [
+      "singlepass",
+      "ct off",
+      "bypass critique modules",
+      "verbosity-only downgrade"
+    ]
+  },
+  "per_tool": {
+    "PRODFA_STRICT": {
+      "required_outputs": [
+        "Component Analysis (S+F)",
+        "Function Model table"
+      ],
+      "required_columns": [
+        "Function Carrier",
+        "Function(Δ-verb)",
+        "Object",
+        "Recipient parameter changed",
+        "Category(U/H)",
+        "Rank(B/Ad/An^n)",
+        "Level(I/N/E)"
+      ],
+      "rank_def": {
+        "BASIC": "function directed at Target",
+        "ADDITIONAL": "function directed at a supersystem component other than Target",
+        "AUXILIARY": "function directed at an engineering system component"
+      },
+      "component_def": "component can be Substance or Field",
+      "key_definitions": [
+        "Rank is determined ONLY by the Object relative to Target/SS/ES (not by intuition)."
+      ],
+      "schema_lock": "PRODFA_STRICT_TABLE_V1",
+      "confusion_pairs": [
+        [
+          "Rank",
+          "Level"
+        ],
+        [
+          "Category",
+          "Type"
+        ],
+        [
+          "Target",
+          "Object"
+        ]
+      ],
+      "required_anchors_resolved": [
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1123",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1124",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1125",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1175"
+      ],
+      "required_anchors": [
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1123",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1124",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1125",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1175"
+      ],
+      "definition_snippet": "p1123:21 1. A function directed at the Target is a basic function and has the highest rank. 2. A function directed at | p1124:$5000, the difference of $2 is negligible. A high relative cost of a component is considered as a Cost Disadvantage. Creating a | p1125:ction Analysis section). Table 6 Function Model Template Function Category Rank Performance level Cost Function Carrier 1 (Absolute Cost, Relative Cost) To",
+      "required_anchors_resolved_pdf": [
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1123",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1124",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1125",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1175"
+      ],
+      "anchor_precision": "pdf",
+      "aliases_en": [
+        "Product Function Analysis",
+        "Function Analysis for Devices",
+        "ProdFA"
+      ],
+      "aliases_ru": [
+        "Функциональный анализ",
+        "функциональная модель",
+        "Элементы функционального анализа"
+      ]
+    },
+    "PROCFA_STRICT": {
+      "required_outputs": [
+        "Process step model",
+        "Flow functions",
+        "Flow disadvantages"
+      ],
+      "required_columns": [
+        "Operation",
+        "Function(Δ-verb)",
+        "Category(U/H)",
+        "Type",
+        "Parameter impacted",
+        "Performance(I/N/E)",
+        "Cost"
+      ],
+      "key_definitions": [
+        "Operations are components (process FA).",
+        "Category is Useful/Harmful; Type is Productive/Supporting/Transport/Measurement/Corrective."
+      ],
+      "schema_lock": "PROCFA_STRICT_TABLE_V1",
+      "confusion_pairs": [
+        [
+          "Category",
+          "Type"
+        ],
+        [
+          "Performance",
+          "Cost"
+        ],
+        [
+          "Operation",
+          "Function"
+        ]
+      ],
+      "required_anchors_resolved": [
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p359",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p361",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p371"
+      ],
+      "required_anchors": [
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p359",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p361",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p371"
+      ],
+      "definition_snippet": "p359:Function Analysis for Processes /triangle45rightFunction Analysis for Processes is an analytical tool that identifies and classifies the functions of operations in a | p361:Function Analysis for Processes /triangle45rightComponent Analysis: Operations constituting a Process are considered as the components of the Process. At the Component Analysis | p371:Function Analysis for Processes Function Model for Processes 1 Operation 2 Function 3 Category 4 Type 5 Performance Level 6 Cost Parameter",
+      "required_anchors_resolved_pdf": [
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p359",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p361",
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p371"
+      ],
+      "anchor_precision": "pdf",
+      "aliases_en": [
+        "Process Function Analysis",
+        "Function Analysis for Processes",
+        "ProcFA"
+      ],
+      "aliases_ru": [
+        "Функциональный анализ процессов",
+        "Функциональная модель процесса"
+      ]
+    },
+    "CECA": {
+      "required_outputs": [
+        "Target Disadvantage",
+        "Cause→Effect disadvantages network",
+        "KD0 list",
+        "Termination-at-constraints markings"
+      ],
+      "ceca_only_lock_tokens": [
+        "CECA only",
+        "CECA_ONLY_LOCK=1"
+      ],
+      "required_columns": [
+        "CauseDisadvantage",
+        "EffectDisadvantage",
+        "Category(U/H)",
+        "EvidenceTag",
+        "μTest",
+        "Termination/Constraint"
+      ],
+      "stop_rules": [
+        "Stop chain expansion when reaching non-eliminable constraint or boundary condition; mark it explicitly."
+      ],
+      "schema_lock": "CECA_TABLE_V1",
+      "confusion_pairs": [
+        [
+          "CauseDisadvantage",
+          "EffectDisadvantage"
+        ],
+        [
+          "KD0",
+          "Root"
+        ],
+        [
+          "Chain",
+          "Tree"
+        ]
+      ],
+      "required_anchors_resolved": [
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p22"
+      ],
+      "required_anchors": [
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p22"
+      ],
+      "definition_snippet": "important: •Case study #2 – Smart Antenna for WiFi units; •Case study #3 – Sports watch with Hemomonitor. •Why TRIZ",
+      "anchor_precision": "pdf",
+      "required_anchors_resolved_pdf": [
+        "MetaLens_v28.1.0_TRIZ_Corpus.pdf#p22"
+      ],
+      "aliases_en": [
+        "CECA",
+        "Cause-Effect Chain Analysis",
+        "Cause–Effect Chain Analysis"
+      ],
+      "aliases_ru": [
+        "Причинно-следственный анализ",
+        "Причинно-следственный анализ нежелательных эффектов",
+        "Причинно-Следственный Анализ"
+      ]
+    },
+    "MPV": {
+      "required_outputs": [
+        "MPV candidate list",
+        "Selection rationale",
+        "μTests"
+      ],
+      "required_columns": [
+        "MPV",
+        "Parameter",
+        "Direction",
+        "EvidenceTag",
+        "μTest"
+      ],
+      "required_anchors": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p6"
+      ],
+      "schema_lock": "MPV_TABLE_V1",
+      "confusion_pairs": [],
+      "required_anchors_resolved": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p6"
+      ],
+      "definition_snippet": "Я ПРОЕКТОВ, ЦЕЛЬЮ КОТОРЫХ ЯВЛЯЕТСЯ ОПРЕДЕЛЕНИЕ НАПРАВЛЕНИЙ СОВЕРШЕНСТВОВАНИЯ ПРОДУКТА ПО ГЛАВНЫМ ПАРАМЕТРАМ КАЧЕСТВА (MPV)..................................................146",
+      "anchor_precision": "pdf",
+      "required_anchors_resolved_pdf": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p6"
+      ]
+    },
+    "SYSTEM_BOUNDARY_MAP": {
+      "required_outputs": [
+        "System boundary map",
+        "Supersystem",
+        "Subsystems",
+        "Interfaces"
+      ],
+      "required_columns": [
+        "Element",
+        "Type(ES/SS/SUB)",
+        "Role",
+        "KeyInteractions",
+        "Notes"
+      ],
+      "required_anchors": [
+        "ARIZ-85C.pdf#p13"
+      ],
+      "schema_lock": "SYSTEM_BOUNDARY_MAP_TABLE_V1",
+      "confusion_pairs": [],
+      "required_anchors_resolved": [
+        "ARIZ-85C.pdf#p13"
+      ],
+      "definition_snippet": "FR for any environment, \"background\" fields. For instance, gravitational and magnetic fields of the Earth. 3. SFR of a supersystem:",
+      "anchor_precision": "pdf",
+      "required_anchors_resolved_pdf": [
+        "ARIZ-85C.pdf#p13"
+      ]
+    },
+    "CONTRADICTION_ANALYSIS": {
+      "required_outputs": [
+        "Contradiction statement",
+        "Improving vs Worsening parameters",
+        "Separation strategy / mapping",
+        "μTest"
+      ],
+      "required_columns": [
+        "Improve",
+        "Worsen",
+        "ContradictionType",
+        "CandidateMoves",
+        "μTest"
+      ],
+      "required_anchors": [
+        "ARIZ-85C.pdf#p2"
+      ],
+      "schema_lock": "CONTRADICTION_ANALYSIS_TABLE_V1",
+      "confusion_pairs": [
+        [
+          "Technical",
+          "Physical"
+        ],
+        [
+          "Improve",
+          "Worsen"
+        ]
+      ],
+      "required_anchors_resolved": [
+        "ARIZ-85C.pdf#p2"
+      ],
+      "definition_snippet": "OBLEM PART 1. Problem definition and modeling PART 2. Problem model analysis PART 3. Defining Ideal Final Result and a",
+      "anchor_precision": "pdf",
+      "required_anchors_resolved_pdf": [
+        "ARIZ-85C.pdf#p2"
+      ],
+      "aliases_en": [
+        "Contradiction Analysis",
+        "Technical contradiction",
+        "Physical contradiction"
+      ],
+      "aliases_ru": [
+        "техническое противоречие",
+        "физическое противоречие",
+        "противоречие"
+      ]
+    },
+    "RESOURCE_ANALYSIS": {
+      "required_outputs": [
+        "Resource inventory",
+        "Classification (substance/field/information/time/space)",
+        "Resource-to-function mapping"
+      ],
+      "required_columns": [
+        "Resource",
+        "Class",
+        "Where/When",
+        "AccessCost",
+        "CandidateUse"
+      ],
+      "required_anchors": [
+        "ARIZ-85C.pdf#p2"
+      ],
+      "schema_lock": "RESOURCE_ANALYSIS_TABLE_V1",
+      "confusion_pairs": [],
+      "required_anchors_resolved": [
+        "ARIZ-85C.pdf#p2"
+      ],
+      "definition_snippet": "m model analysis PART 3. Defining Ideal Final Result and a physical contradiction PART 4. Problem solving by the use",
+      "anchor_precision": "pdf",
+      "required_anchors_resolved_pdf": [
+        "ARIZ-85C.pdf#p2"
+      ],
+      "aliases_en": [
+        "Resource Analysis",
+        "Resources"
+      ],
+      "aliases_ru": [
+        "ресурсы",
+        "ресурс",
+        "ресурсный",
+        "ресурсный анализ"
+      ]
+    },
+    "PRODUCT_TRIMMING_STRICT": {
+      "required_outputs": [
+        "Function model snippet",
+        "Trimming candidates",
+        "Reassignment plan",
+        "Risks+μTests"
+      ],
+      "required_columns": [
+        "ElementTrimmed",
+        "FunctionReassignedTo",
+        "Mechanism",
+        "Risk",
+        "μTest"
+      ],
+      "required_anchors": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p4"
+      ],
+      "schema_lock": "PRODUCT_TRIMMING_STRICT_TABLE_V1",
+      "confusion_pairs": [],
+      "required_anchors_resolved": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p4"
+      ],
+      "definition_snippet": ".............................................................................................................86 4.4.14. Trimming ..................................................................................................................................90 4.4.15. Функционально - ориентированный поиск.................................",
+      "anchor_precision": "pdf",
+      "required_anchors_resolved_pdf": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p4"
+      ],
+      "aliases_en": [
+        "Product Trimming",
+        "Trimming"
+      ],
+      "aliases_ru": [
+        "тримминг",
+        "Тримминг"
+      ]
+    },
+    "PROCESS_TRIMMING_STRICT": {
+      "required_outputs": [
+        "Process step model",
+        "Trimming candidates",
+        "Step elimination/substitution plan",
+        "Risks+μTests"
+      ],
+      "required_columns": [
+        "StepTrimmed",
+        "Replacement",
+        "Mechanism",
+        "Risk",
+        "μTest"
+      ],
+      "required_anchors": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p4"
+      ],
+      "schema_lock": "PROCESS_TRIMMING_STRICT_TABLE_V1",
+      "confusion_pairs": [],
+      "required_anchors_resolved": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p4"
+      ],
+      "definition_snippet": ".............................................................................................................86 4.4.14. Trimming ..................................................................................................................................90 4.4.15. Функционально - ориентированный поиск.................................",
+      "anchor_precision": "pdf",
+      "required_anchors_resolved_pdf": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p4"
+      ],
+      "aliases_en": [
+        "Process Trimming",
+        "Trimming"
+      ],
+      "aliases_ru": [
+        "тримминг",
+        "Тримминг"
+      ]
+    },
+    "TESE": {
+      "required_outputs": [
+        "Relevant evolution trends",
+        "Current state vs next states",
+        "Contradictions created/resolved",
+        "μTests"
+      ],
+      "required_columns": [
+        "Trend",
+        "Current",
+        "Next",
+        "Benefit",
+        "Risk",
+        "μTest"
+      ],
+      "required_anchors": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p4"
+      ],
+      "schema_lock": "TESE_TABLE_V1",
+      "confusion_pairs": [],
+      "required_anchors_resolved": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p4"
+      ],
+      "definition_snippet": "...............................................................................................38 4.4.4. Benchmarking и S-curve анализ .............................................................................................41 * - в таблицу 4.4.3. заносятся только значения весовых коэффициентов. ...........45 В таблице",
+      "anchor_precision": "pdf",
+      "required_anchors_resolved_pdf": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p4"
+      ]
+    },
+    "PEL_STRICT": {
+      "required_outputs": [
+        "Selected PEL lines",
+        "System mapping onto lines",
+        "Next-step hypotheses",
+        "μTests"
+      ],
+      "required_columns": [
+        "PEL_Line",
+        "CurrentPosition",
+        "NextPosition",
+        "Evidence",
+        "μTest"
+      ],
+      "required_anchors": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p1"
+      ],
+      "schema_lock": "PEL_STRICT_TABLE_V1",
+      "confusion_pairs": [],
+      "required_anchors_resolved": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p1"
+      ],
+      "definition_snippet": "tion): Gerasimov-Oleg_Technology-of-selection-of-innovative-design-tools-based-on-TRIZ-FCA_2010_RU.pdf (p2·p228) - PEL (Parallel Evolutionary Lines) - Litvin: Parallel Evolutionary Lines - S.Litvin presentation at TMH (Eng) 020926",
+      "anchor_precision": "pdf",
+      "required_anchors_resolved_pdf": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p1"
+      ]
+    },
+    "ROBUSTNESS_HIDDEN_FAILURE_MAPPING": {
+      "required_outputs": [
+        "Failure modes",
+        "Hidden failure mapping",
+        "Robustness levers",
+        "μTests"
+      ],
+      "required_columns": [
+        "FailureMode",
+        "Trigger",
+        "DetectionGap",
+        "Impact",
+        "Mitigation",
+        "μTest"
+      ],
+      "required_anchors": [
+        "MetaLens_v28.1.0_Addendum.pdf#p213"
+      ],
+      "schema_lock": "ROBUSTNESS_HIDDEN_FAILURE_MAPPING_TABLE_V1",
+      "confusion_pairs": [],
+      "required_anchors_resolved": [
+        "MetaLens_v28.1.0_Addendum.pdf#p213"
+      ],
+      "definition_snippet": "rk for real - world longitudinal application, action research, and applicability across diverse industries to test its robustness and outcomes.",
+      "anchor_precision": "pdf",
+      "required_anchors_resolved_pdf": [
+        "MetaLens_v28.1.0_Addendum.pdf#p213"
+      ]
+    },
+    "DIVERSION_ANALYSIS": {
+      "required_outputs": [
+        "Diversion points",
+        "Alternative paths",
+        "Selection criteria",
+        "μTests"
+      ],
+      "required_columns": [
+        "DiversionPoint",
+        "AltPath",
+        "Pros",
+        "Cons",
+        "μTest"
+      ],
+      "required_anchors": [
+        "MetaLens_v28.1.0_Addendum.pdf#p59",
+        "MetaLens_v28.1.0_Addendum.pdf#p61",
+        "MetaLens_v28.1.0_Addendum.pdf#p63",
+        "MetaLens_v28.1.0_Addendum.pdf#p65"
+      ],
+      "schema_lock": "DIVERSION_ANALYSIS_TABLE_V1",
+      "confusion_pairs": [],
+      "required_anchors_resolved": [
+        "MetaLens_v28.1.0_Addendum.pdf#p59",
+        "MetaLens_v28.1.0_Addendum.pdf#p61",
+        "MetaLens_v28.1.0_Addendum.pdf#p63",
+        "MetaLens_v28.1.0_Addendum.pdf#p65"
+      ],
+      "definition_snippet": "ДИВЕРСИОННЫЙ АНАЛИЗ ... специализированную методику Диверсионного Анализа (ДА) ... этапы: 1. Формулирование диверсионной задачи.",
+      "anchor_precision": "pdf",
+      "required_anchors_resolved_pdf": [
+        "MetaLens_v28.1.0_Addendum.pdf#p59",
+        "MetaLens_v28.1.0_Addendum.pdf#p61",
+        "MetaLens_v28.1.0_Addendum.pdf#p63",
+        "MetaLens_v28.1.0_Addendum.pdf#p65"
+      ],
+      "match_hint": "Russian: 'Диверсионный анализ' (DA) may correspond to 'Smart Saboteur' concept.",
+      "aliases_en": [
+        "Diversion Analysis",
+        "Smart Saboteur"
+      ],
+      "aliases_ru": [
+        "Диверсионный анализ",
+        "Диверсионного Анализа",
+        "диверсионная задача",
+        "диверсионный функциональный анализ",
+        "ДИВЕРСИОННЫЙ АНАЛИЗ"
+      ],
+      "acronyms_ru": [
+        "ДА"
+      ],
+      "acronym_guards": {
+        "ДА": {
+          "valid_if_contains": [
+            "диверсион"
+          ],
+          "note": "Treat 'ДА' as Diversion Analysis only if 'диверсион' co-occurs on same page/snippet."
+        }
+      }
+    },
+    "CID_CORE_OVERLAY": {
+      "required_outputs": [
+        "CID snapshot",
+        "Top contradictions",
+        "Resource reframes",
+        "Concept families",
+        "μTests"
+      ],
+      "required_columns": [
+        "Hypothesis",
+        "CID_Lens",
+        "TargetContradiction",
+        "ExpectedGain",
+        "μTest"
+      ],
+      "required_anchors": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p1"
+      ],
+      "schema_lock": "CID_CORE_OVERLAY_TABLE_V1",
+      "confusion_pairs": [],
+      "required_anchors_resolved": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p1"
+      ],
+      "definition_snippet": "nary Lines) - Litvin: Parallel Evolutionary Lines - S.Litvin presentation at TMH (Eng) 020926 3SL,1AL.pdf (p229·p258) - CID Course Slides:",
+      "anchor_precision": "pdf",
+      "required_anchors_resolved_pdf": [
+        "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p1"
+      ]
+    },
+    "ARIZ_85C": {
+      "required_outputs": [
+        "ARIZ stage outputs",
+        "Contradiction formulation",
+        "IFR",
+        "Resources",
+        "Solution concepts",
+        "Verification μTests"
+      ],
+      "required_columns": [
+        "Stage",
+        "Output",
+        "Check"
+      ],
+      "required_anchors": [
+        "ARIZ-85C.pdf#p1"
+      ],
+      "schema_lock": "ARIZ_85C_TABLE_V1",
+      "confusion_pairs": [
+        [
+          "Stage",
+          "Step"
+        ],
+        [
+          "Output",
+          "Check"
+        ]
+      ],
+      "required_anchors_resolved": [
+        "ARIZ-85C.pdf#p1"
+      ],
+      "definition_snippet": "ARIZ-85C: ALGORITHM OF INVENTIVE PROBLEM SOLVING Algorithm for Solving Inventive Problems ARIZ-85C Translated and adapted from the original Russian text",
+      "anchor_precision": "pdf",
+      "required_anchors_resolved_pdf": [
+        "ARIZ-85C.pdf#p1"
+      ]
+    },
+    "NONTECH_STRATAGEM_BANK_FAER": {
+      "required_outputs": [
+        "Target contradiction",
+        "3-7 stratagem candidates",
+        "Resource fit",
+        "Side-effects / blowback",
+        "μTests"
+      ],
+      "required_columns": [
+        "Stratagem_ID",
+        "CandidateMove",
+        "ContradictionFit",
+        "RequiredResources",
+        "Risk/Blowback",
+        "μTest"
+      ],
+      "required_anchors": [
+        "Faer-Sergey_TRIZ-beyond-technology-Stratagems-as-an-analogue-of-techniques-for-solving-non-technical-problems-in-the-field-of-elections-advertising-and-PR_2012_RU.pdf"
+      ],
+      "schema_lock": "NONTECH_STRATAGEM_BANK_FAER_TABLE_V1",
+      "confusion_pairs": [
+        [
+          "Framing",
+          "SolutionMove"
+        ],
+        [
+          "Contradiction",
+          "Narrative"
+        ],
+        [
+          "DefaultCore",
+          "OptionalBank"
+        ]
+      ],
+      "required_anchors_resolved": [
+        "Faer-Sergey_TRIZ-beyond-technology-Stratagems-as-an-analogue-of-techniques-for-solving-non-technical-problems-in-the-field-of-elections-advertising-and-PR_2012_RU.pdf"
+      ],
+      "definition_snippet": "Optional KB-backed solution-input bank for nontechnical contradiction resolution; use only after contradiction/resources are explicit.",
+      "anchor_precision": "pdf",
+      "aliases_en": [
+        "Faer bank",
+        "Faer stratagem bank",
+        "nontechnical stratagems",
+        "stratagem bank"
+      ],
+      "aliases_ru": [
+        "стратагемы",
+        "банк стратагем",
+        "стратагемный банк"
+      ]
+    }
+  },
+  "lint_rules_min": {
+    "must_print_goal_block": true,
+    "must_print_lane_b_first": true,
+    "lane_a_appendix_default": true,
+    "must_print_footer": true
+  },
+  "registry_notes": [
+    "v1.1 adds stub per-tool schemas for all canonical tools to avoid silent fail-closed without guidance.",
+    "Anchors are placeholders (KB:...) and must be mapped to real KB doc/page anchors to enable full strict execution.",
+    "v1.2 adds snippet stubs file and casual guard patch in runtime (see FULL runtime).",
+    "v1.3 adds explicit schema locks, confusion pairs, and strict ProcFA/ProdFA/CECA column schemas; adds TRIZ_LINTER_RULES_v1.json and TRIZ_SCHEMA_LOCK_MAP_v1.csv.",
+    "v1.4-lite resolves required_anchors using markdown KB sources only (fast). PDFs remain referenced via SEARCH hints until explicit page anchors are added.",
+    "v1.5-min adds PDF page-precise anchors for ProdFA_STRICT and ProcFA_STRICT using TRIZ_Corpus pages (1123-1125,1175,359,361,371). Other tools remain nonpdf-anchored pending mapping.",
+    "v1.6-compendium adds PDF page anchors for remaining tools using Extensions Compendium/Rubina/ARIZ PDFs (limited page scan). Tools not found remain nonpdf.",
+    "v1.7-step resolves CECA/Diversion/Robustness via stepped scan of Extensions Compendium to avoid timeouts.",
+    "v1.8-force attempts stepped scans on TRIZ_Corpus and Addendum to resolve CECA/Diversion/Robustness page anchors.",
+    "v1.9-diversion-nocorpus attempts to resolve diversion using compendium/addendum only (no corpus scan to avoid timeouts).",
+    "v2.1 resolves DIVERSION_ANALYSIS by searching for 'Smart Saboteur' keyword in Compendium/Addendum.",
+    "v2.2 sets DIVERSION_ANALYSIS PDF anchors using Russian 'Диверсионный анализ' section in MetaLens_v28.1.0_Addendum.pdf (pp.59,61,63,65).",
+    "v2.3 adds bilingual alias fields (aliases_en/aliases_ru/acronyms_ru/acronym_guards) and a global RU glossary + guarded acronym rules.",
+    "MINPATCH_v1: ancillary policy/contract/linter/schema/stubs embedded to reduce KB file count; external files removed from patchset.",
+    "v4_8k_20: removed dangling references to non-packed markdown files; restored TRIZ PDF-anchor preference marker; embedded TESE_QUICK_INDEX for fast TESE_CARD/TESE_PATH use.",
+    "v30.0.12: added Feygenson mature-system KB support (growth vs development, micro-trends, new areas/reverse-FOS, functional synthesis) without new visible tool."
+  ],
+  "global_ru_glossary": {
+    "ТС": "Техническая система (Engineering System)",
+    "НЭ": "Нежелательный эффект (Undesirable effect / disadvantage)",
+    "ГФ": "Главная функция (Main function)",
+    "ФСА": "Функционально-стоимостной анализ (Function–Cost Analysis)",
+    "ДА": "Диверсионный анализ (Diversion Analysis) [guarded acronym]"
+  },
+  "global_acronym_guards": {
+    "ДА": {
+      "valid_if_contains": [
+        "диверсион"
+      ],
+      "note": "Treat 'ДА' as Diversion Analysis only if 'диверсион' co-occurs on same page/snippet."
+    }
+  },
+  "embedded_TRIZ_LINTER_RULES_v1": {
+    "version": "TRIZ_LINTER_RULES_v1",
+    "global": {
+      "always_on_goal_block": true,
+      "lane_b_first": true,
+      "lane_a_appendix_default": true,
+      "always_on_footer": true
+    },
+    "per_tool": {
+      "MPV": {
+        "schema_lock": "MPV_TABLE_V1",
+        "must_have_columns": [
+          "MPV",
+          "Parameter",
+          "Direction",
+          "EvidenceTag",
+          "μTest"
+        ],
+        "must_have_sections": [
+          "MPV candidate list",
+          "Selection rationale",
+          "μTests"
+        ],
+        "confusion_pairs": [],
+        "anchor_required_for_strict": true
+      },
+      "SYSTEM_BOUNDARY_MAP": {
+        "schema_lock": "SYSTEM_BOUNDARY_MAP_TABLE_V1",
+        "must_have_columns": [
+          "Element",
+          "Type(ES/SS/SUB)",
+          "Role",
+          "KeyInteractions",
+          "Notes"
+        ],
+        "must_have_sections": [
+          "System boundary map",
+          "Supersystem",
+          "Subsystems",
+          "Interfaces"
+        ],
+        "confusion_pairs": [],
+        "anchor_required_for_strict": true
+      },
+      "PRODFA_STRICT": {
+        "schema_lock": "PRODFA_STRICT_TABLE_V1",
+        "must_have_columns": [
+          "Function Carrier",
+          "Function(Δ-verb)",
+          "Object",
+          "Recipient parameter changed",
+          "Category(U/H)",
+          "Rank(B/Ad/An^n)",
+          "Level(I/N/E)"
+        ],
+        "must_have_sections": [
+          "Component Analysis (S+F)",
+          "Function Model table"
+        ],
+        "confusion_pairs": [
+          [
+            "Rank",
+            "Level"
+          ],
+          [
+            "Category",
+            "Type"
+          ],
+          [
+            "Target",
+            "Object"
+          ]
+        ],
+        "anchor_required_for_strict": true
+      },
+      "PROCFA_STRICT": {
+        "schema_lock": "PROCFA_STRICT_TABLE_V1",
+        "must_have_columns": [
+          "Operation",
+          "Function(Δ-verb)",
+          "Category(U/H)",
+          "Type",
+          "Parameter impacted",
+          "Performance(I/N/E)",
+          "Cost"
+        ],
+        "must_have_sections": [
+          "Process step model",
+          "Flow functions",
+          "Flow disadvantages"
+        ],
+        "confusion_pairs": [
+          [
+            "Category",
+            "Type"
+          ],
+          [
+            "Performance",
+            "Cost"
+          ],
+          [
+            "Operation",
+            "Function"
+          ]
+        ],
+        "anchor_required_for_strict": true
+      },
+      "CECA": {
+        "schema_lock": "CECA_TABLE_V1",
+        "must_have_columns": [
+          "CauseDisadvantage",
+          "EffectDisadvantage",
+          "Category(U/H)",
+          "EvidenceTag",
+          "μTest",
+          "Termination/Constraint"
+        ],
+        "must_have_sections": [
+          "Target Disadvantage",
+          "Cause→Effect disadvantages network",
+          "KD0 list",
+          "Termination-at-constraints markings"
+        ],
+        "confusion_pairs": [
+          [
+            "CauseDisadvantage",
+            "EffectDisadvantage"
+          ],
+          [
+            "KD0",
+            "Root"
+          ],
+          [
+            "Chain",
+            "Tree"
+          ]
+        ],
+        "anchor_required_for_strict": true
+      },
+      "CONTRADICTION_ANALYSIS": {
+        "schema_lock": "CONTRADICTION_ANALYSIS_TABLE_V1",
+        "must_have_columns": [
+          "Improve",
+          "Worsen",
+          "ContradictionType",
+          "CandidateMoves",
+          "μTest"
+        ],
+        "must_have_sections": [
+          "Contradiction statement",
+          "Improving vs Worsening parameters",
+          "Separation strategy / mapping",
+          "μTest"
+        ],
+        "confusion_pairs": [
+          [
+            "Technical",
+            "Physical"
+          ],
+          [
+            "Improve",
+            "Worsen"
+          ]
+        ],
+        "anchor_required_for_strict": true
+      },
+      "RESOURCE_ANALYSIS": {
+        "schema_lock": "RESOURCE_ANALYSIS_TABLE_V1",
+        "must_have_columns": [
+          "Resource",
+          "Class",
+          "Where/When",
+          "AccessCost",
+          "CandidateUse"
+        ],
+        "must_have_sections": [
+          "Resource inventory",
+          "Classification (substance/field/information/time/space)",
+          "Resource-to-function mapping"
+        ],
+        "confusion_pairs": [],
+        "anchor_required_for_strict": true
+      },
+      "PRODUCT_TRIMMING_STRICT": {
+        "schema_lock": "PRODUCT_TRIMMING_STRICT_TABLE_V1",
+        "must_have_columns": [
+          "ElementTrimmed",
+          "FunctionReassignedTo",
+          "Mechanism",
+          "Risk",
+          "μTest"
+        ],
+        "must_have_sections": [
+          "Function model snippet",
+          "Trimming candidates",
+          "Reassignment plan",
+          "Risks+μTests"
+        ],
+        "confusion_pairs": [],
+        "anchor_required_for_strict": true
+      },
+      "PROCESS_TRIMMING_STRICT": {
+        "schema_lock": "PROCESS_TRIMMING_STRICT_TABLE_V1",
+        "must_have_columns": [
+          "StepTrimmed",
+          "Replacement",
+          "Mechanism",
+          "Risk",
+          "μTest"
+        ],
+        "must_have_sections": [
+          "Process step model",
+          "Trimming candidates",
+          "Step elimination/substitution plan",
+          "Risks+μTests"
+        ],
+        "confusion_pairs": [],
+        "anchor_required_for_strict": true
+      },
+      "TESE": {
+        "schema_lock": "TESE_TABLE_V1",
+        "must_have_columns": [
+          "Trend",
+          "Current",
+          "Next",
+          "Benefit",
+          "Risk",
+          "μTest"
+        ],
+        "must_have_sections": [
+          "Relevant evolution trends",
+          "Current state vs next states",
+          "Contradictions created/resolved",
+          "μTests"
+        ],
+        "confusion_pairs": [],
+        "anchor_required_for_strict": true
+      },
+      "PEL_STRICT": {
+        "schema_lock": "PEL_STRICT_TABLE_V1",
+        "must_have_columns": [
+          "PEL_Line",
+          "CurrentPosition",
+          "NextPosition",
+          "Evidence",
+          "μTest"
+        ],
+        "must_have_sections": [
+          "Selected PEL lines",
+          "System mapping onto lines",
+          "Next-step hypotheses",
+          "μTests"
+        ],
+        "confusion_pairs": [],
+        "anchor_required_for_strict": true
+      },
+      "ROBUSTNESS_HIDDEN_FAILURE_MAPPING": {
+        "schema_lock": "ROBUSTNESS_HIDDEN_FAILURE_MAPPING_TABLE_V1",
+        "must_have_columns": [
+          "FailureMode",
+          "Trigger",
+          "DetectionGap",
+          "Impact",
+          "Mitigation",
+          "μTest"
+        ],
+        "must_have_sections": [
+          "Failure modes",
+          "Hidden failure mapping",
+          "Robustness levers",
+          "μTests"
+        ],
+        "confusion_pairs": [],
+        "anchor_required_for_strict": true
+      },
+      "DIVERSION_ANALYSIS": {
+        "schema_lock": "DIVERSION_ANALYSIS_TABLE_V1",
+        "must_have_columns": [
+          "DiversionPoint",
+          "AltPath",
+          "Pros",
+          "Cons",
+          "μTest"
+        ],
+        "must_have_sections": [
+          "Diversion points",
+          "Alternative paths",
+          "Selection criteria",
+          "μTests"
+        ],
+        "confusion_pairs": [],
+        "anchor_required_for_strict": true
+      },
+      "CID_CORE_OVERLAY": {
+        "schema_lock": "CID_CORE_OVERLAY_TABLE_V1",
+        "must_have_columns": [
+          "Hypothesis",
+          "CID_Lens",
+          "TargetContradiction",
+          "ExpectedGain",
+          "μTest"
+        ],
+        "must_have_sections": [
+          "CID snapshot",
+          "Top contradictions",
+          "Resource reframes",
+          "Concept families",
+          "μTests"
+        ],
+        "confusion_pairs": [],
+        "anchor_required_for_strict": true
+      },
+      "ARIZ_85C": {
+        "schema_lock": "ARIZ_85C_TABLE_V1",
+        "must_have_columns": [
+          "Stage",
+          "Output",
+          "Check"
+        ],
+        "must_have_sections": [
+          "ARIZ stage outputs",
+          "Contradiction formulation",
+          "IFR",
+          "Resources",
+          "Solution concepts",
+          "Verification μTests"
+        ],
+        "confusion_pairs": [
+          [
+            "Stage",
+            "Step"
+          ],
+          [
+            "Output",
+            "Check"
+          ]
+        ],
+        "anchor_required_for_strict": true
+      }
+    }
+  },
+  "embedded_TRIZ_SCHEMA_LOCK_MAP_v1_csv": "tool,schema_lock,required_columns\nMPV,MPV_TABLE_V1,MPV|Parameter|Direction|EvidenceTag|μTest\nSYSTEM_BOUNDARY_MAP,SYSTEM_BOUNDARY_MAP_TABLE_V1,Element|Type(ES/SS/SUB)|Role|KeyInteractions|Notes\nPRODFA_STRICT,PRODFA_STRICT_TABLE_V1,Function Carrier|Function(Δ-verb)|Object|Recipient parameter changed|Category(U/H)|Rank(B/Ad/An^n)|Level(I/N/E)\nPROCFA_STRICT,PROCFA_STRICT_TABLE_V1,Operation|Function(Δ-verb)|Category(U/H)|Type|Parameter impacted|Performance(I/N/E)|Cost\nCECA,CECA_TABLE_V1,CauseDisadvantage|EffectDisadvantage|Category(U/H)|EvidenceTag|μTest|Termination/Constraint\nCONTRADICTION_ANALYSIS,CONTRADICTION_ANALYSIS_TABLE_V1,Improve|Worsen|ContradictionType|CandidateMoves|μTest\nRESOURCE_ANALYSIS,RESOURCE_ANALYSIS_TABLE_V1,Resource|Class|Where/When|AccessCost|CandidateUse\nPRODUCT_TRIMMING_STRICT,PRODUCT_TRIMMING_STRICT_TABLE_V1,ElementTrimmed|FunctionReassignedTo|Mechanism|Risk|μTest\nPROCESS_TRIMMING_STRICT,PROCESS_TRIMMING_STRICT_TABLE_V1,StepTrimmed|Replacement|Mechanism|Risk|μTest\nTESE,TESE_TABLE_V1,Trend|Current|Next|Benefit|Risk|μTest\nPEL_STRICT,PEL_STRICT_TABLE_V1,PEL_Line|CurrentPosition|NextPosition|Evidence|μTest\nROBUSTNESS_HIDDEN_FAILURE_MAPPING,ROBUSTNESS_HIDDEN_FAILURE_MAPPING_TABLE_V1,FailureMode|Trigger|DetectionGap|Impact|Mitigation|μTest\nDIVERSION_ANALYSIS,DIVERSION_ANALYSIS_TABLE_V1,DiversionPoint|AltPath|Pros|Cons|μTest\nCID_CORE_OVERLAY,CID_CORE_OVERLAY_TABLE_V1,Hypothesis|CID_Lens|TargetContradiction|ExpectedGain|μTest\nARIZ_85C,ARIZ_85C_TABLE_V1,Stage|Output|Check\n",
+  "embedded_TRIZ_SNIPPETS_STUBS_v1": "# TRIZ Snippet Stubs (PDF page anchors — complete)\n\nDiversion Analysis located via Russian term 'Диверсионный анализ' in Addendum.\n\n\n## MPV\n\nANCHOR_LOCK=MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p6\n\n### Snippet\n\n> Я ПРОЕКТОВ, ЦЕЛЬЮ КОТОРЫХ ЯВЛЯЕТСЯ ОПРЕДЕЛЕНИЕ НАПРАВЛЕНИЙ СОВЕРШЕНСТВОВАНИЯ ПРОДУКТА ПО ГЛАВНЫМ ПАРАМЕТРАМ КАЧЕСТВА (MPV)..................................................146\n\n\n## SYSTEM_BOUNDARY_MAP\n\nANCHOR_LOCK=ARIZ-85C.pdf#p13\n\n### Snippet\n\n> FR for any environment, \"background\" fields. For instance, gravitational and magnetic fields of the Earth. 3. SFR of a supersystem:\n\n\n## PRODFA_STRICT\n\nANCHOR_LOCK=MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1123\n\nANCHOR_LOCK=MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1124\n\nANCHOR_LOCK=MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1125\n\nANCHOR_LOCK=MetaLens_v28.1.0_TRIZ_Corpus.pdf#p1175\n\n### Snippet\n\n> p1123:21 1. A function directed at the Target is a basic function and has the highest rank. 2. A function directed at | p1124:$5000, the difference of $2 is negligible. A high relative cost of a component is considered as a Cost Disadvantage. Creating a | p1125:ction Analysis section). Table 6 Function Model Template Function Category Rank Performance level Cost Function Carrier 1 (Absolute Cost, Relative Cost) To\n\n\n## PROCFA_STRICT\n\nANCHOR_LOCK=MetaLens_v28.1.0_TRIZ_Corpus.pdf#p359\n\nANCHOR_LOCK=MetaLens_v28.1.0_TRIZ_Corpus.pdf#p361\n\nANCHOR_LOCK=MetaLens_v28.1.0_TRIZ_Corpus.pdf#p371\n\n### Snippet\n\n> p359:Function Analysis for Processes /triangle45rightFunction Analysis for Processes is an analytical tool that identifies and classifies the functions of operations in a | p361:Function Analysis for Processes /triangle45rightComponent Analysis: Operations constituting a Process are considered as the components of the Process. At the Component Analysis | p371:Function Analysis for Processes Function Model for Processes 1 Operation 2 Function 3 Category 4 Type 5 Performance Level 6 Cost Parameter\n\n\n## CECA\n\nANCHOR_LOCK=MetaLens_v28.1.0_TRIZ_Corpus.pdf#p22\n\n### Snippet\n\n> important: •Case study #2 – Smart Antenna for WiFi units; •Case study #3 – Sports watch with Hemomonitor. •Why TRIZ\n\n\n## CONTRADICTION_ANALYSIS\n\nANCHOR_LOCK=ARIZ-85C.pdf#p2\n\n### Snippet\n\n> OBLEM PART 1. Problem definition and modeling PART 2. Problem model analysis PART 3. Defining Ideal Final Result and a\n\n\n## RESOURCE_ANALYSIS\n\nANCHOR_LOCK=ARIZ-85C.pdf#p2\n\n### Snippet\n\n> m model analysis PART 3. Defining Ideal Final Result and a physical contradiction PART 4. Problem solving by the use\n\n\n## PRODUCT_TRIMMING_STRICT\n\nANCHOR_LOCK=MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p4\n\n### Snippet\n\n> .............................................................................................................86 4.4.14. Trimming ..................................................................................................................................90 4.4.15. Функционально - ориентированный поиск.................................\n\n\n## PROCESS_TRIMMING_STRICT\n\nANCHOR_LOCK=MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p4\n\n### Snippet\n\n> .............................................................................................................86 4.4.14. Trimming ..................................................................................................................................90 4.4.15. Функционально - ориентированный поиск.................................\n\n\n## TESE\n\nANCHOR_LOCK=MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p4\n\n### Snippet\n\n> ...............................................................................................38 4.4.4. Benchmarking и S-curve анализ .............................................................................................41 * - в таблицу 4.4.3. заносятся только значения весовых коэффициентов. ...........45 В таблице\n\n\n## PEL_STRICT\n\nANCHOR_LOCK=MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p1\n\n### Snippet\n\n> tion): Gerasimov-Oleg_Technology-of-selection-of-innovative-design-tools-based-on-TRIZ-FCA_2010_RU.pdf (p2·p228) - PEL (Parallel Evolutionary Lines) - Litvin: Parallel Evolutionary Lines - S.Litvin presentation at TMH (Eng) 020926\n\n\n## ROBUSTNESS_HIDDEN_FAILURE_MAPPING\n\nANCHOR_LOCK=MetaLens_v28.1.0_Addendum.pdf#p213\n\n### Snippet\n\n> rk for real - world longitudinal application, action research, and applicability across diverse industries to test its robustness and outcomes.\n\n\n## DIVERSION_ANALYSIS\n\nANCHOR_LOCK=MetaLens_v28.1.0_Addendum.pdf#p59\n\nANCHOR_LOCK=MetaLens_v28.1.0_Addendum.pdf#p61\n\nANCHOR_LOCK=MetaLens_v28.1.0_Addendum.pdf#p63\n\nANCHOR_LOCK=MetaLens_v28.1.0_Addendum.pdf#p65\n\n### Snippet\n\n> ДИВЕРСИОННЫЙ АНАЛИЗ ... специализированную методику Диверсионного Анализа (ДА) ... этапы: 1. Формулирование диверсионной задачи.\n\n\n## CID_CORE_OVERLAY\n\nANCHOR_LOCK=MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf#p1\n\n### Snippet\n\n> nary Lines) - Litvin: Parallel Evolutionary Lines - S.Litvin presentation at TMH (Eng) 020926 3SL,1AL.pdf (p229·p258) - CID Course Slides:\n\n\n## ARIZ_85C\n\nANCHOR_LOCK=ARIZ-85C.pdf#p1\n\n### Snippet\n\n> ARIZ-85C: ALGORITHM OF INVENTIVE PROBLEM SOLVING Algorithm for Solving Inventive Problems ARIZ-85C Translated and adapted from the original Russian text\n\n",
+  "embedded_TESE_QUICK_INDEX_v1": true,
+  "compat_restore_v30_0_9": {
+    "preserve_strict_v30_default": true,
+    "legacy44a_mode": {
+      "token": "legacy44a:on",
+      "effect": "conditional legacy visibility while preserving current strict capabilities"
+    },
+    "natural_language_aliases": {
+      "appendix": [
+        "no appendix",
+        "appendix on",
+        "full inline"
+      ],
+      "ct": [
+        "ct off",
+        "ct on",
+        "ct inline",
+        "ct shadow"
+      ],
+      "epistemic": [
+        "no epistemic report"
+      ],
+      "audit": [
+        "audit on"
+      ],
+      "normalize": [
+        "normalize on",
+        "rewrite my prompt first"
+      ]
+    },
+    "deliverable_controls": {
+      "style": [
+        "auto",
+        "memo",
+        "narrative",
+        "bullets",
+        "table",
+        "PRD",
+        "code-review"
+      ],
+      "artifact": true,
+      "normalize": true,
+      "audit": true,
+      "singlepass": true,
+      "eval": true,
+      "rubric_router": true,
+      "rubric_lock": true
+    },
+    "domain_packs": [
+      "auto",
+      "strategy",
+      "software",
+      "ops",
+      "policy",
+      "IP",
+      "forms"
+    ],
+    "forms_mode": {
+      "triggers": [
+        "form",
+        "application",
+        "kyc",
+        "checklist",
+        "template",
+        "declaration",
+        "intake"
+      ],
+      "hazards": [
+        "parsing-copy",
+        "xor-gating",
+        "missing-attestation",
+        "contradictory-instructions"
+      ]
+    },
+    "staged_contract": [
+      "P0",
+      "P1",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "fractal_default_on_for": [
+      "substantial",
+      "deep",
+      "inventive"
+    ],
+    "footer_required": "Fractal iterations: k | defects fixed: ... | open blockers: ..."
+  },
+  "compat_aliases_v30_0_9a": {
+    "route_aliases": {
+      "Stage-Gate": [
+        "Stage Gate",
+        "phase gate",
+        "Stagegate"
+      ],
+      "QEA": [
+        "Quality Evolution Analysis"
+      ],
+      "MPV": [
+        "Main Parameter of Value"
+      ],
+      "VOP": [
+        "Voice of Product"
+      ],
+      "Hybridization": [
+        "Hybridisation"
+      ],
+      "CECA": [
+        "Cause-Effect Chain Analysis",
+        "Advanced cause-effect chains analysis"
+      ],
+      "Toolselect": [
+        "tool selection",
+        "tool select"
+      ],
+      "Value consulting": [
+        "value consulting"
+      ],
+      "Forecasting": [
+        "forecasting",
+        "technology evolution"
+      ]
+    },
+    "policy": "Treat listed aliases as equivalent triggers for strict routing/disambiguation."
+  },
+  "compat_restore_v44_transfer": {
+    "policy": "Preserve stable v28.1.6.44A breadth inside v30.0.9 base without losing strict controller behavior.",
+    "transfer_pack": "MetaLens_v44_Capability_TransferPack_Integrated.md",
+    "legacy_routes": [
+      "RM_AMI_01",
+      "RM_GENTRIZ_FORECASTING_2010",
+      "RM_GENTRIZ_NEW_AREAS_2010",
+      "RM_GENTRIZ_TECH_PROCESS_IMPROVE_2010",
+      "RM_GENTRIZ_TOOLSELECT_2010",
+      "RM_GENTRIZ_VALUE_CONSULTING_2010",
+      "RM_GERASIMOV_ARIZ_USAGE_2010",
+      "RM_GERASIMOV_TOOLSELECT_2010"
+    ],
+    "engineering_support": [
+      "ITC2025_MATRIZ_Index.md",
+      "Proceedings-ITC-2025-MATRIZ-Official-compressed.pdf"
+    ]
+  },
+  "compat_faer_bank_v30_0_11": {
+    "activation_rule": "nontechnical influence/PR/messaging/stakeholder-conflict tasks only; after contradiction/resources",
+    "kb_files": [
+      "Faer-Sergey_TRIZ-beyond-technology-Stratagems-as-an-analogue-of-techniques-for-solving-non-technical-problems-in-the-field-of-elections-advertising-and-PR_2012_RU.pdf",
+      "Faer_Stratagem_Bank_Index_v1.md"
+    ],
+    "default_state": "off"
+  },
+  "compat_feygenson_stage3_v30_0_12": {
+    "status": "gated-kb-support",
+    "intent": "support mature/3rd-stage technical-system work without creating a new visible school",
+    "applies_to": [
+      "PEL_STRICT",
+      "TESE",
+      "MPV",
+      "SYSTEM_BOUNDARY_MAP"
+    ],
+    "use_when": [
+      "mature or 3rd-stage system",
+      "growth vs development ambiguity",
+      "micro-trend guidance needed",
+      "new areas / reverse-FOS / functional synthesis relevant"
+    ],
+    "do_not_do": [
+      "do not replace core roadmaps",
+      "do not create separate prompt layer",
+      "do not apply by default outside mature-system contexts"
+    ],
+    "kb_source": "Feygenson-Naum_Improving-the-tools-for-analysis-and-synthesis-of-technical-systems-at-the-3rd-stage-of-evolution_2008_RU.pdf"
+  },
+  "current_runtime": {
+    "lite": "MetaLens_Runtime_NOVA_v30.0.20_RubinaSKIM.md",
+    "full": "MetaLens_Runtime_NOVA_v30.0.20_RubinaSKIM_FULL.md"
+  },
+  "compat_markers": [
+    "compat_allgreen_v30_0_20",
+    "compat_patentboost_v30_0_20"
+  ],
+  "packed_routes": [
+    "LIN_PATENT_VALIDATION_2025",
+    "CID_CANONICAL_EXACT",
+    "STRICT_SURROGATE_BRIDGE",
+    "RAW_OUTPUT_OVERRIDE"
+  ]
+}

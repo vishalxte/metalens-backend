@@ -1,0 +1,69 @@
+# Metalens backend — Nuitka-compiled, single .so, running on Docker
+# Desktop (Linux containers).
+#
+# WHAT IS DELIBERATELY NOT HERE
+# ─────────────────────────────
+#   * No postgres service. The database stays on the Windows host, as
+#     requested. The container reaches it through host.docker.internal.
+#   * No redis service. The app has no Redis dependency at all — its
+#     exact-match and semantic caches are both PostgreSQL tables
+#     (app/services/cache_service.py, app/services/semantic_cache_service.py).
+#
+# The `api` service is the whole stack.
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: runtime
+      args:
+        # Must match the Python the .so was compiled against — the two
+        # are the same stage chain in the Dockerfile, so changing it
+        # here changes both at once.
+        PYTHON_VERSION: "3.11"
+        # Set this to the major version of PostgreSQL running on
+        # Windows (or higher). pg_dump cannot dump a newer server.
+        PG_MAJOR: "17"
+
+    image: metalens-backend:nuitka
+    container_name: metalens-backend
+
+    # Secrets and config come from the host at run time. Nothing
+    # sensitive is baked into the image (see .dockerignore).
+    env_file:
+      - .env.docker
+
+    environment:
+      # Read by app/backup/backupscheduler.py. Inside a compiled module
+      # __file__ no longer points at the source tree, so the project
+      # root is stated explicitly rather than derived.
+      PROJECT_ROOT: /app
+      # Flip to "false" if you prefer to run migrations by hand.
+      RUN_MIGRATIONS: "true"
+      WAIT_FOR_DB: "true"
+      WAIT_FOR_DB_TIMEOUT: "60"
+
+    ports:
+      - "8000:8000"
+
+    # host.docker.internal is built in on Docker Desktop for Windows;
+    # this line additionally makes the same compose file work on a
+    # Linux Docker engine, where it is not.
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    volumes:
+      # Uploaded documents must outlive the container.
+      - ./uploads:/app/uploads
+      # Rotating log files, so they are readable from Windows.
+      - ./logs:/app/logs
+      # BACKUP_ROOT in .env.docker points here. It is intentionally NOT
+      # under /app: backupscheduler refuses to write backups inside the
+      # project tree, and it deletes old backup_* folders in this
+      # directory before each run.
+      - ./backups:/backups
+
+    restart: unless-stopped
+
+    stop_grace_period: 20s

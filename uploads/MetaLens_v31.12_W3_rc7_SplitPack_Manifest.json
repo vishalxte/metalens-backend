@@ -1,0 +1,74 @@
+{
+  "bundle_version": "31.12-W3-rc7",
+  "bundle_zip": "MetaLens_v31.12_W3_rc7_SYNC_FullBundle_19.zip",
+  "install_file_count": 19,
+  "metadata_file_count": 2,
+  "install_files": [
+    "MetaLens_v31.12_Runtime_NoLoss_SYNC.md",
+    "MetaLens_v31.12_Roadmap_Manifest_NoLoss_SYNC.md",
+    "MetaLens_v31.12_KB_Index_NoLoss_SYNC.md",
+    "MetaLens_v31.12_EvalPack_NoLoss_SYNC.json",
+    "TRIZ_COMPILER_REGISTRY_v1.json",
+    "MetaLens_v44_Capability_TransferPack_Integrated.md",
+    "ITC2025_MATRIZ_Index.md",
+    "Faer_Stratagem_Bank_Index_v1.md",
+    "MetaLens_v28.1.0_Addendum.pdf",
+    "MetaLens_v28.1.0_TRIZ_Corpus.pdf",
+    "MetaLens_v28.1.0_OTSM_Axioms_2015-11-30.pdf",
+    "ARIZ-85C.pdf",
+    "Proceedings-ITC-2025-MATRIZ-Official-compressed.pdf",
+    "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf",
+    "Rubina_2013_TRIZ_SKIM_Diagnostics.pdf",
+    "Faer-Sergey_TRIZ-beyond-technology-Stratagems-as-an-analogue-of-techniques-for-solving-non-technical-problems-in-the-field-of-elections-advertising-and-PR_2012_RU.pdf",
+    "Feygenson-Naum_Improving-the-tools-for-analysis-and-synthesis-of-technical-systems-at-the-3rd-stage-of-evolution_2008_RU.pdf",
+    "Chrzaszcz-Jerzy_Advanced-cause-effect-chains-analysis_2022_EN.pdf",
+    "Lin-Yue-Yatsunenko-Sergey_Patent-analysis-methodology-for-validating-and-.025_EN.pdf"
+  ],
+  "metadata_files": [
+    "MetaLens_v31.12_W3_rc7_SplitPack_README.txt",
+    "MetaLens_v31.12_W3_rc7_SplitPack_Manifest.json"
+  ],
+  "split_parts": [
+    "MetaLens_v31.12_W3_rc7_Part_1_Control_and_Indexes.zip",
+    "MetaLens_v31.12_W3_rc7_Part_2_Addendum.zip",
+    "MetaLens_v31.12_W3_rc7_Part_3_TRIZ_Corpus.zip",
+    "MetaLens_v31.12_W3_rc7_Part_4_Extensions_Compendium.zip",
+    "MetaLens_v31.12_W3_rc7_Part_5_Medium_PDFs_A.zip",
+    "MetaLens_v31.12_W3_rc7_Part_6_Medium_PDFs_B.zip"
+  ],
+  "part_contents": {
+    "MetaLens_v31.12_W3_rc7_Part_1_Control_and_Indexes.zip": [
+      "MetaLens_v31.12_Runtime_NoLoss_SYNC.md",
+      "MetaLens_v31.12_Roadmap_Manifest_NoLoss_SYNC.md",
+      "MetaLens_v31.12_KB_Index_NoLoss_SYNC.md",
+      "MetaLens_v31.12_EvalPack_NoLoss_SYNC.json",
+      "TRIZ_COMPILER_REGISTRY_v1.json",
+      "MetaLens_v44_Capability_TransferPack_Integrated.md",
+      "ITC2025_MATRIZ_Index.md",
+      "Faer_Stratagem_Bank_Index_v1.md",
+      "MetaLens_v31.12_W3_rc7_SplitPack_README.txt",
+      "MetaLens_v31.12_W3_rc7_SplitPack_Manifest.json"
+    ],
+    "MetaLens_v31.12_W3_rc7_Part_2_Addendum.zip": [
+      "MetaLens_v28.1.0_Addendum.pdf"
+    ],
+    "MetaLens_v31.12_W3_rc7_Part_3_TRIZ_Corpus.zip": [
+      "MetaLens_v28.1.0_TRIZ_Corpus.pdf"
+    ],
+    "MetaLens_v31.12_W3_rc7_Part_4_Extensions_Compendium.zip": [
+      "MetaLens_Extensions_Compendium_NOVA_v30.0.1.pdf"
+    ],
+    "MetaLens_v31.12_W3_rc7_Part_5_Medium_PDFs_A.zip": [
+      "MetaLens_v28.1.0_OTSM_Axioms_2015-11-30.pdf",
+      "ARIZ-85C.pdf",
+      "Proceedings-ITC-2025-MATRIZ-Official-compressed.pdf",
+      "Rubina_2013_TRIZ_SKIM_Diagnostics.pdf"
+    ],
+    "MetaLens_v31.12_W3_rc7_Part_6_Medium_PDFs_B.zip": [
+      "Faer-Sergey_TRIZ-beyond-technology-Stratagems-as-an-analogue-of-techniques-for-solving-non-technical-problems-in-the-field-of-elections-advertising-and-PR_2012_RU.pdf",
+      "Feygenson-Naum_Improving-the-tools-for-analysis-and-synthesis-of-technical-systems-at-the-3rd-stage-of-evolution_2008_RU.pdf",
+      "Chrzaszcz-Jerzy_Advanced-cause-effect-chains-analysis_2022_EN.pdf",
+      "Lin-Yue-Yatsunenko-Sergey_Patent-analysis-methodology-for-validating-and-.025_EN.pdf"
+    ]
+  }
+}
