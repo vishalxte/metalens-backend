@@ -1,15 +1,10 @@
 """Resume-safe batched migration of legacy plaintext sensitive fields.
 
-Run only after the application-level encryption code and the sources JSON->TEXT
-schema migration are deployed. The application may stay live while this runs:
-rows are selected with FOR UPDATE SKIP LOCKED, encrypted in memory, and committed
-in bounded batches. Re-running the script safely skips authenticated v1 values.
-
-The script never prints plaintext or the encryption key.
+Run after the application-level encryption code and `alembic upgrade head`.
+The application may remain live: rows are selected with FOR UPDATE SKIP LOCKED,
+encrypted in memory, and committed in bounded batches. Re-running safely skips
+already authenticated v1 values. The script never prints plaintext or keys.
 """
-import sys
-from typing import Iterable
-
 from sqlalchemy import create_engine, text
 
 from app.core.config import settings
@@ -35,8 +30,20 @@ def _database_url() -> str:
     )
 
 
+def _validate_existing_ciphertexts(connection, table: str, field: str) -> None:
+    """Fail closed if any existing v1-prefixed value is malformed/tampered."""
+    rows = connection.execute(text(
+        f"SELECT {field} FROM {table} WHERE {field} LIKE 'v1:%'"
+    )).fetchall()
+    for row in rows:
+        is_encrypted(row[0])
+
+
 def migrate_field(engine, table: str, pk: str, field: str) -> int:
     total = 0
+    with engine.connect() as connection:
+        _validate_existing_ciphertexts(connection, table, field)
+
     while True:
         with engine.begin() as connection:
             rows = connection.execute(text(f"""
@@ -50,14 +57,10 @@ def migrate_field(engine, table: str, pk: str, field: str) -> int:
             """), {"batch_size": BATCH_SIZE}).fetchall()
             if not rows:
                 break
+
             for row in rows:
                 value = row[1]
                 if value is None:
-                    continue
-                # Prefix detection is authenticated; a malformed v1 value
-                # raises rather than being silently treated as plaintext.
-                if isinstance(value, str) and value.startswith("v1:"):
-                    is_encrypted(value)
                     continue
                 encrypted = encrypt(value)
                 connection.execute(
